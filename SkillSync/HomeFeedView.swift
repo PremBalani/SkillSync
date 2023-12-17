@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeFeedView.swift
 //  SkillSync
 //
 //  Created by Prem Balani on 12/16/23.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeFeedView: View {
     var body: some View {
-        MainTabView()
+        Text("Your Feed")
     }
 }
 
 #Preview {
-    ContentView()
+    HomeFeedView()
 }

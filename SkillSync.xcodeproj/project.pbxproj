@@ -11,6 +11,12 @@
 		E5F454292B2E19E40080AE4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F454282B2E19E40080AE4D /* ContentView.swift */; };
 		E5F4542B2B2E19EB0080AE4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5F4542A2B2E19EB0080AE4D /* Assets.xcassets */; };
 		E5F4542E2B2E19EB0080AE4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5F4542D2B2E19EB0080AE4D /* Preview Assets.xcassets */; };
+		E5F454352B2E2DD10080AE4D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F454342B2E2DD10080AE4D /* MainTabView.swift */; };
+		E5F454392B2E2FB20080AE4D /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F454382B2E2FB10080AE4D /* DiscoverView.swift */; };
+		E5F4543B2B2E30080080AE4D /* EditPortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4543A2B2E30080080AE4D /* EditPortfolioView.swift */; };
+		E5F4543D2B2E30210080AE4D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4543C2B2E30210080AE4D /* NotificationView.swift */; };
+		E5F4543F2B2E30380080AE4D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4543E2B2E30370080AE4D /* ProfileView.swift */; };
+		E5F454412B2E30A60080AE4D /* HomeFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F454402B2E30A60080AE4D /* HomeFeedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		E5F454282B2E19E40080AE4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E5F4542A2B2E19EB0080AE4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5F4542D2B2E19EB0080AE4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E5F454342B2E2DD10080AE4D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		E5F454382B2E2FB10080AE4D /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		E5F4543A2B2E30080080AE4D /* EditPortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPortfolioView.swift; sourceTree = "<group>"; };
+		E5F4543C2B2E30210080AE4D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		E5F4543E2B2E30370080AE4D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E5F454402B2E30A60080AE4D /* HomeFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				E5F454262B2E19E40080AE4D /* SkillSyncApp.swift */,
 				E5F454282B2E19E40080AE4D /* ContentView.swift */,
+				E5F454342B2E2DD10080AE4D /* MainTabView.swift */,
+				E5F454402B2E30A60080AE4D /* HomeFeedView.swift */,
+				E5F454382B2E2FB10080AE4D /* DiscoverView.swift */,
+				E5F4543A2B2E30080080AE4D /* EditPortfolioView.swift */,
+				E5F4543C2B2E30210080AE4D /* NotificationView.swift */,
+				E5F4543E2B2E30370080AE4D /* ProfileView.swift */,
 				E5F4542A2B2E19EB0080AE4D /* Assets.xcassets */,
 				E5F4542C2B2E19EB0080AE4D /* Preview Content */,
 			);
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5F4543F2B2E30380080AE4D /* ProfileView.swift in Sources */,
 				E5F454292B2E19E40080AE4D /* ContentView.swift in Sources */,
+				E5F4543D2B2E30210080AE4D /* NotificationView.swift in Sources */,
+				E5F454392B2E2FB20080AE4D /* DiscoverView.swift in Sources */,
+				E5F4543B2B2E30080080AE4D /* EditPortfolioView.swift in Sources */,
+				E5F454412B2E30A60080AE4D /* HomeFeedView.swift in Sources */,
 				E5F454272B2E19E40080AE4D /* SkillSyncApp.swift in Sources */,
+				E5F454352B2E2DD10080AE4D /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
