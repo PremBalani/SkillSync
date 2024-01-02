@@ -9,7 +9,9 @@ import SwiftUI
 
 struct HomeFeedView: View {
     var body: some View {
+        
         Text("Your Feed")
+        
     }
 }
 

@@ -9,7 +9,15 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        Text("Profile")
+        VStack {
+            Image("IconImage")
+                .resizable()
+                .frame(width: 100, height: 100)
+                .clipShape(Circle())
+                .overlay {
+                    Circle().stroke(.oliveGreen, lineWidth: 4.0)
+            }
+        }
     }
 }
 

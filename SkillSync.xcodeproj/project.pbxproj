@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E553D2962B3BCC9B007DD8A3 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553D2952B3BCC9B007DD8A3 /* RegistrationView.swift */; };
+		E55723B62B39497800854E24 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55723B52B39497800854E24 /* LoginView.swift */; };
+		E5B491A82B43796900B60AC3 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5B491A72B43795A00B60AC3 /* Lato-Regular.ttf */; };
+		E5B491AB2B437AF300B60AC3 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5B491AA2B437AF200B60AC3 /* Lato-Black.ttf */; };
+		E5B491AD2B437B0600B60AC3 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5B491AC2B437B0600B60AC3 /* Lato-Bold.ttf */; };
+		E5EB27B12B3F6ED6003001DE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EB27B02B3F6ED6003001DE /* User.swift */; };
+		E5EB27B52B4100B2003001DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5EB27B42B4100B2003001DE /* GoogleService-Info.plist */; };
 		E5F454272B2E19E40080AE4D /* SkillSyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F454262B2E19E40080AE4D /* SkillSyncApp.swift */; };
 		E5F454292B2E19E40080AE4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F454282B2E19E40080AE4D /* ContentView.swift */; };
 		E5F4542B2B2E19EB0080AE4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5F4542A2B2E19EB0080AE4D /* Assets.xcassets */; };
@@ -20,6 +27,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E553D2952B3BCC9B007DD8A3 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		E55723B52B39497800854E24 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E5B491A72B43795A00B60AC3 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		E5B491A92B4379BA00B60AC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E5B491AA2B437AF200B60AC3 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		E5B491AC2B437B0600B60AC3 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		E5EB27B02B3F6ED6003001DE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E5EB27B42B4100B2003001DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E5F454232B2E19E40080AE4D /* SkillSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkillSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5F454262B2E19E40080AE4D /* SkillSyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillSyncApp.swift; sourceTree = "<group>"; };
 		E5F454282B2E19E40080AE4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +59,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5B491A62B43791D00B60AC3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E5B491A72B43795A00B60AC3 /* Lato-Regular.ttf */,
+				E5B491AA2B437AF200B60AC3 /* Lato-Black.ttf */,
+				E5B491AC2B437B0600B60AC3 /* Lato-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E5EB27AF2B3F6E94003001DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5EB27B02B3F6ED6003001DE /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E5F4541A2B2E19E40080AE4D = {
 			isa = PBXGroup;
 			children = (
@@ -63,8 +96,13 @@
 		E5F454252B2E19E40080AE4D /* SkillSync */ = {
 			isa = PBXGroup;
 			children = (
+				E5B491A92B4379BA00B60AC3 /* Info.plist */,
+				E5B491A62B43791D00B60AC3 /* Fonts */,
 				E5F454262B2E19E40080AE4D /* SkillSyncApp.swift */,
 				E5F454282B2E19E40080AE4D /* ContentView.swift */,
+				E55723B52B39497800854E24 /* LoginView.swift */,
+				E553D2952B3BCC9B007DD8A3 /* RegistrationView.swift */,
+				E5EB27AF2B3F6E94003001DE /* Model */,
 				E5F454342B2E2DD10080AE4D /* MainTabView.swift */,
 				E5F454402B2E30A60080AE4D /* HomeFeedView.swift */,
 				E5F454382B2E2FB10080AE4D /* DiscoverView.swift */,
@@ -72,6 +110,7 @@
 				E5F4543C2B2E30210080AE4D /* NotificationView.swift */,
 				E5F4543E2B2E30370080AE4D /* ProfileView.swift */,
 				E5F4542A2B2E19EB0080AE4D /* Assets.xcassets */,
+				E5EB27B42B4100B2003001DE /* GoogleService-Info.plist */,
 				E5F4542C2B2E19EB0080AE4D /* Preview Content */,
 			);
 			path = SkillSync;
@@ -144,7 +183,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5F4542E2B2E19EB0080AE4D /* Preview Assets.xcassets in Resources */,
+				E5B491AD2B437B0600B60AC3 /* Lato-Bold.ttf in Resources */,
 				E5F4542B2B2E19EB0080AE4D /* Assets.xcassets in Resources */,
+				E5EB27B52B4100B2003001DE /* GoogleService-Info.plist in Resources */,
+				E5B491AB2B437AF300B60AC3 /* Lato-Black.ttf in Resources */,
+				E5B491A82B43796900B60AC3 /* Lato-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,11 +201,14 @@
 				E5F4543F2B2E30380080AE4D /* ProfileView.swift in Sources */,
 				E5F454292B2E19E40080AE4D /* ContentView.swift in Sources */,
 				E5F4543D2B2E30210080AE4D /* NotificationView.swift in Sources */,
+				E55723B62B39497800854E24 /* LoginView.swift in Sources */,
 				E5F454392B2E2FB20080AE4D /* DiscoverView.swift in Sources */,
 				E5F4543B2B2E30080080AE4D /* EditPortfolioView.swift in Sources */,
 				E5F454412B2E30A60080AE4D /* HomeFeedView.swift in Sources */,
 				E5F454272B2E19E40080AE4D /* SkillSyncApp.swift in Sources */,
 				E5F454352B2E2DD10080AE4D /* MainTabView.swift in Sources */,
+				E553D2962B3BCC9B007DD8A3 /* RegistrationView.swift in Sources */,
+				E5EB27B12B3F6ED6003001DE /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +345,7 @@
 				DEVELOPMENT_TEAM = 27U5XGVRSV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SkillSync/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -328,6 +375,7 @@
 				DEVELOPMENT_TEAM = 27U5XGVRSV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SkillSync/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -59,7 +59,7 @@ struct MainTabView: View {
                 .padding(6)
             }
             .frame(height: 70)
-            .background(.oliveGreen.opacity(0.2))
+            .background(.navyBlue.opacity(0.2))
             .cornerRadius(35)
             .padding(.horizontal, 26)
             
@@ -73,12 +73,12 @@ extension MainTabView {
             Spacer()
             Image(systemName: imageName)
                 .resizable()
-                .foregroundStyle(isActive ? .lightGreen : .gray)
+                .foregroundStyle(isActive ? .white : .black)
                 .frame(width:20, height: 20)
             Spacer()
         }
         .frame(width: isActive ? .infinity : 60, height: 60)
-        .background(isActive ? .offWhite : .clear)
+        .background(isActive ? .navyBlue : .clear)
         .cornerRadius(30)
     }
 }
