@@ -16,8 +16,7 @@ struct LoginView: View {
         VStack() {
             
             Spacer()
-            
-            
+
             VStack(alignment: .leading, spacing: 10) {
                 Text("Welcome Back!")
                     .font(.custom("Lato-Black", size: 24))
@@ -104,7 +103,7 @@ struct LoginView: View {
             Image("bottom-wave")
                 .offset(x:28, y: 15)
         }
-        .ignoresSafeArea(.all)
+        .ignoresSafeArea()
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 Image(systemName: "chevron.left")

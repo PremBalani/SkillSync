@@ -8,10 +8,8 @@
 import SwiftUI
 
 struct RegistrationView: View {
-    @State var email = ""
-    @State var username = ""
-    @State var password = ""
     @Environment(\.dismiss) private var dismiss
+    @StateObject var viewModel = RegistrationViewModel()
     
     var body: some View {
         VStack() {
@@ -41,13 +39,16 @@ struct RegistrationView: View {
                         .fontWeight(.bold)
                     
                     TextField("",
-                              text: $email,
+                              text: $viewModel.email,
                               prompt: Text("Email")
                         .foregroundStyle(.mediumBlue)
                         .font(.custom("Lato-Black", size: 12))
                     )
+                    .foregroundStyle(.mediumBlue)
+                    .font(.custom("Lato-Black", size: 12))
                     .autocorrectionDisabled()
-                    .textInputAutocapitalization(.none)
+                    .textInputAutocapitalization(.never)
+                    .keyboardType(.emailAddress)
                 }
                 .padding(12)
                 .background(.babyBlue.opacity(0.4))
@@ -61,13 +62,15 @@ struct RegistrationView: View {
                         .fontWeight(.bold)
                     
                     TextField("",
-                              text: $username,
+                              text: $viewModel.username,
                               prompt: Text("Username")
                         .foregroundStyle(.mediumBlue)
                         .font(.custom("Lato-Black", size: 12))
                     )
+                    .foregroundStyle(.mediumBlue)
+                    .font(.custom("Lato-Black", size: 12))
                     .autocorrectionDisabled()
-                    .textInputAutocapitalization(.none)
+                    .textInputAutocapitalization(.never)
                 }
                 .padding(12)
                 .background(.babyBlue.opacity(0.4))
@@ -81,11 +84,36 @@ struct RegistrationView: View {
                         .fontWeight(.bold)
                     
                     SecureField("",
-                                text: $password,
+                                text: $viewModel.password,
                                 prompt: Text("Password")
                         .foregroundStyle(.mediumBlue)
                         .font(.custom("Lato-Black", size: 12))
                     )
+                    .foregroundStyle(.mediumBlue)
+                }
+                .padding(12)
+                .background(.babyBlue.opacity(0.4))
+                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
+                .padding(.horizontal, 37)
+                
+                HStack {
+                    Image(systemName: "book")
+                        .foregroundStyle(.mediumBlue)
+                        .imageScale(.large)
+                        .fontWeight(.bold)
+                    
+                    TextField("",
+                              text: $viewModel.grade,
+                              prompt: Text("Grade Level (9-12)")
+                        .foregroundStyle(.mediumBlue)
+                        .font(.custom("Lato-Black", size: 12))
+                    )
+                    .keyboardType(.numberPad)
+                    .foregroundStyle(.mediumBlue)
+                    .font(.custom("Lato-Black", size: 12))
+                    .textInputAutocapitalization(.never)
+                    .autocorrectionDisabled()
+                    
                 }
                 .padding(12)
                 .background(.babyBlue.opacity(0.4))
@@ -94,16 +122,21 @@ struct RegistrationView: View {
             }
             
             Button {
-                print("signed up")
+                Task { try await viewModel.createUser() }
             } label: {
                 Text("Sign up")
                     .font(.custom("Lato-Black", size: 12))
-                    .foregroundStyle(.offWhite)
+                    .foregroundStyle(.white)
                     .frame(width: 320, height: 44)
                     .background(.navyBlue)
                     .clipShape(RoundedRectangle(cornerSize: CGSize(width: 8, height: 8)))
             }
             .padding(.vertical, 40)
+            .alert("Error", isPresented: $viewModel.hasError) {
+                Button("OK", role: .cancel) {}
+            } message: {
+                Text(viewModel.errorMessage)
+            }
         
             
             Spacer()

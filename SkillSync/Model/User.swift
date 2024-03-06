@@ -14,15 +14,12 @@ struct User: Identifiable, Hashable, Codable {
     var profileImageUrl: String?
     var bio: String?
     let email: String
-    
-    
+    var grade: String
 }
 
 extension User {
     static var MOCK_USERS: [User] = [
-        .init(id: NSUUID().uuidString, username: "kbakan", fullname: "Krish", profileImageUrl: "SampleProfilePic", bio: "hello", email: "kbakan3685@gmail.com"),
-        .init(id: NSUUID().uuidString, username: "pbakan", fullname: "Prem", profileImageUrl: "SampleProfilePic", bio: "hello", email: "pbakan3685@gmail.com"),
-        .init(id: NSUUID().uuidString, username: "rbakan", fullname: "Rishi", profileImageUrl: "SampleProfilePic", bio: "hello", email: "rbakan3685@gmail.com"),
-        .init(id: NSUUID().uuidString, username: "BaapaIndianElite", fullname: "Baapa", profileImageUrl: "SampleProfilePic", bio: "hello", email: "kbakan3685@gmail.com")
+        .init(id: NSUUID().uuidString, username: "kbalan", fullname: "Krish", profileImageUrl: "SampleProfilePic", bio: "hello", email: "kbalan3685@gmail.com", grade: "11"),
+        .init(id: NSUUID().uuidString, username: "pbalan", fullname: "Prem", profileImageUrl: "SampleProfilePic", bio: "hello", email: "pbalan3685@gmail.com", grade: "11")
     ]
 }

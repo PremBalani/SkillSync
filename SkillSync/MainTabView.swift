@@ -20,7 +20,7 @@ enum TabbedItems: Int, CaseIterable {
         case .discover:
             return "magnifyingglass"
         case .edit:
-            return "paintbrush.pointed.fill"
+            return "Sync Logo"
         case .notification:
             return "message.badge.fill"
         case .profile:
@@ -30,6 +30,7 @@ enum TabbedItems: Int, CaseIterable {
 }
 
 struct MainTabView: View {
+    let user: User
     @State var selectedTab = 0
     var body: some View {
         ZStack (alignment: .bottom) {
@@ -42,7 +43,7 @@ struct MainTabView: View {
                     .tag(2)
                 NotificationView()
                     .tag(3)
-                ProfileView()
+                ProfileView(user: user)
                     .tag(4)
             }
             
@@ -59,7 +60,7 @@ struct MainTabView: View {
                 .padding(6)
             }
             .frame(height: 70)
-            .background(.navyBlue.opacity(0.2))
+            .background(.navyBlue.opacity(0.7))
             .cornerRadius(35)
             .padding(.horizontal, 26)
             
@@ -71,10 +72,19 @@ extension MainTabView {
     func CustomTabItem(imageName: String, isActive: Bool) -> some View{
         HStack (spacing: 10) {
             Spacer()
-            Image(systemName: imageName)
-                .resizable()
-                .foregroundStyle(isActive ? .white : .black)
-                .frame(width:20, height: 20)
+            if(imageName == "Sync Logo") {
+                Image(imageName)
+                    .resizable()
+                    .foregroundStyle(isActive ? .white : .black)
+                    .frame(width:25, height: 35)
+                    .offset(x:9)
+                Spacer()
+            } else {
+                Image(systemName: imageName)
+                    .resizable()
+                    .foregroundStyle(isActive ? .white : .black)
+                    .frame(width:20, height: 20)
+            }
             Spacer()
         }
         .frame(width: isActive ? .infinity : 60, height: 60)
@@ -84,5 +94,5 @@ extension MainTabView {
 }
 
 #Preview {
-    MainTabView()
+    MainTabView(user: User.MOCK_USERS[0])
 }
