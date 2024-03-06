@@ -40,13 +40,13 @@ class AuthService: ObservableObject {
     }
     
     @MainActor
-    func createUser(email: String, password: String, username: String, grade: String) async throws {
+    func createUser(email: String, password: String, fullname: String, grade: String) async throws {
         do {
             hasError = false
             errorMessage = ""
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
             self.userSession = result.user
-            await self.uploadUserData(uid: result.user.uid, username: username, email: email, grade: grade)
+            await self.uploadUserData(uid: result.user.uid, fullname: fullname, email: email, grade: grade)
         } catch {
             hasError = true
             errorMessage = error.localizedDescription
@@ -54,8 +54,8 @@ class AuthService: ObservableObject {
         }
     }
     
-    private func uploadUserData(uid: String, username: String, email: String, grade: String) async {
-        let user = User(id: uid, username: username, email: email, grade: grade)
+    private func uploadUserData(uid: String, fullname: String, email: String, grade: String) async {
+        let user = User(id: uid, fullname: fullname, email: email, grade: grade)
         print(user)
         self.currentUser = user
         guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }

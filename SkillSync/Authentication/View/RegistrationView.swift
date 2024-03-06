@@ -62,8 +62,8 @@ struct RegistrationView: View {
                         .fontWeight(.bold)
                     
                     TextField("",
-                              text: $viewModel.username,
-                              prompt: Text("Username")
+                              text: $viewModel.fullname,
+                              prompt: Text("Full Name")
                         .foregroundStyle(.mediumBlue)
                         .font(.custom("Lato-Black", size: 12))
                     )

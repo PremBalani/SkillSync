@@ -9,8 +9,7 @@ import Foundation
 
 struct User: Identifiable, Hashable, Codable {
     let id: String
-    var username: String
-    var fullname: String?
+    var fullname: String
     var profileImageUrl: String?
     var bio: String?
     let email: String
@@ -19,7 +18,7 @@ struct User: Identifiable, Hashable, Codable {
 
 extension User {
     static var MOCK_USERS: [User] = [
-        .init(id: NSUUID().uuidString, username: "kbalan", fullname: "Krish", profileImageUrl: "SampleProfilePic", bio: "hello", email: "kbalan3685@gmail.com", grade: "11"),
-        .init(id: NSUUID().uuidString, username: "pbalan", fullname: "Prem", profileImageUrl: "SampleProfilePic", bio: "hello", email: "pbalan3685@gmail.com", grade: "11")
+        .init(id: NSUUID().uuidString, fullname: "Krish Balani", profileImageUrl: "HeadshotImage", bio: "hello", email: "kbalan3685@gmail.com", grade: "11"),
+        .init(id: NSUUID().uuidString, fullname: "Prem Balani", profileImageUrl: "SampleProfilePic", bio: "hello", email: "pbalan3685@gmail.com", grade: "11")
     ]
 }

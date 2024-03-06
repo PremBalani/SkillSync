@@ -50,6 +50,7 @@ struct LoginView: View {
                     .font(.custom("Lato-Black", size: 12))
                     .autocorrectionDisabled()
                     .textInputAutocapitalization(.never)
+                    .keyboardType(.emailAddress)
                 }
                 .padding(12)
                 .background(.babyBlue.opacity(0.4))

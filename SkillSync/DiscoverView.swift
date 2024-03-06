@@ -22,11 +22,8 @@ struct DiscoverView: View {
                                     .frame(width: 40, height: 40)
                                     .clipShape(Circle())
                                 VStack (alignment: .leading) {
-                                    Text(user.username)
+                                    Text(user.fullname)
                                         .fontWeight(.semibold)
-                                    if let safeFullName = user.fullname {
-                                        Text(safeFullName)
-                                    }
                                     
                                 }
                                 .font(.footnote)

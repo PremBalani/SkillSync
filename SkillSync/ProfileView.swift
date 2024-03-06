@@ -12,30 +12,29 @@ struct ProfileView: View {
     var body: some View {
         NavigationStack {
             ScrollView(){
-                VStack(alignment: .leading) {
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text("\(user.username)'s Portfolio")
-                                .font(.custom("Lato-Black", size: 32))
-                                .foregroundStyle(.navyBlue)
-                            Text("Grade Level:  \(user.grade)")
-                                .font(.custom("Lato-Bold", size: 16))
-                                .foregroundStyle(.companyOrange)
-                        }
-                        
-                        Spacer()
-                        
-                        Image("HeadshotImage")
+                VStack(alignment: .center) {
+                    
+                    VStack(alignment: .center, spacing:10) {
+                        // Change UploadCloudImage to the Man Symbol Image
+                        Image(user.profileImageUrl ?? "UploadCloudImage")
                             .resizable()
-                            .frame(width: 100, height: 100)
+                            .frame(width: 124, height: 124)
                             .scaledToFit()
                             .clipShape(Circle())
                             .overlay {
                                 Circle()
-                                    .stroke(.mediumBlue, lineWidth: 1.0)
+                                    .stroke(.navyBlue, lineWidth: 3.0)
                             }
+                        
+                        Text("\(user.fullname)'s Portfolio")
+                            .font(.custom("Lato-Black", size: 32))
+                            .foregroundStyle(.navyBlue)
+                        Text("Grade Level:  \(user.grade)")
+                            .font(.custom("Lato-Bold", size: 16))
+                            .foregroundStyle(.companyOrange)
                     }
                     .padding(.trailing, 15)
+                    
                     VStack (alignment: .leading, spacing: 20) {
                         Text("Projects")
                             .font(.custom("Lato-Black", size: 14))
@@ -113,7 +112,7 @@ struct ProfileView: View {
                                     .font(.custom("Lato-Regular", size: 12))
                                 Text(" - Collaborated with a team of 23 officers to administer competitive events, oversee chapter operations, and develop relationships with local business leaders to serve a chapter of over 300 active members")
                                     .font(.custom("Lato-Regular", size: 12))
-                                    
+                                
                             }
                             .padding(.trailing, 15)
                             .foregroundStyle(.mediumBlue)
@@ -143,7 +142,7 @@ struct ProfileView: View {
                                     .font(.custom("Lato-Regular", size: 12))
                                 Text(" - Constructed 400 reusable heavy-duty face shields to distribute to 101 different essential organizations")
                                     .font(.custom("Lato-Regular", size: 12))
-                                    
+                                
                             }
                         }
                         .padding(.trailing, 15)
@@ -161,6 +160,7 @@ struct ProfileView: View {
                             AuthService.shared.signOut()
                         } label: {
                             Image(systemName: "rectangle.portrait.and.arrow.right")
+                                .fontWeight(.bold)
                         }
                     }
                 }
