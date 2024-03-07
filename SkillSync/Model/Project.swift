@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct Project: Identifiable {
+// Identifiable: Display them in a list, Hashable: So it can be navigatable, Codable: Upload information and Download informaion from server
+
+struct Project: Identifiable, Hashable, Codable {
     var id: String
     var coverImageURL: String
     var title: String

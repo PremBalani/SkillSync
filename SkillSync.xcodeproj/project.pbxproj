@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E53884552B9919C9008F37F6 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53884542B9919C9008F37F6 /* EditProfileView.swift */; };
+		E53884592B99635A008F37F6 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53884582B99635A008F37F6 /* EditProfileViewModel.swift */; };
 		E553D2962B3BCC9B007DD8A3 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553D2952B3BCC9B007DD8A3 /* RegistrationView.swift */; };
 		E56E90552B471DCA00CB3894 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E90542B471DCA00CB3894 /* LoginView.swift */; };
 		E56E90582B471E2F00CB3894 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E90572B471E2F00CB3894 /* Authentication.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E53884542B9919C9008F37F6 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		E53884582B99635A008F37F6 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		E553D2952B3BCC9B007DD8A3 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		E56E90542B471DCA00CB3894 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E56E90572B471E2F00CB3894 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
@@ -79,6 +83,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E53884532B9919AF008F37F6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E53884562B99632E008F37F6 /* View */,
+				E53884572B996337008F37F6 /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E53884562B99632E008F37F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5F4543E2B2E30370080AE4D /* ProfileView.swift */,
+				E53884542B9919C9008F37F6 /* EditProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E53884572B996337008F37F6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E53884582B99635A008F37F6 /* EditProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E56E90522B471C3300CB3894 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,7 +220,7 @@
 				E5F454382B2E2FB10080AE4D /* DiscoverView.swift */,
 				E5F4543A2B2E30080080AE4D /* EditPortfolioView.swift */,
 				E5F4543C2B2E30210080AE4D /* NotificationView.swift */,
-				E5F4543E2B2E30370080AE4D /* ProfileView.swift */,
+				E53884532B9919AF008F37F6 /* Profile */,
 				E5F4542A2B2E19EB0080AE4D /* Assets.xcassets */,
 				E5EB27B42B4100B2003001DE /* GoogleService-Info.plist */,
 				E5F4542C2B2E19EB0080AE4D /* Preview Content */,
@@ -289,6 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E53884552B9919C9008F37F6 /* EditProfileView.swift in Sources */,
+				E53884592B99635A008F37F6 /* EditProfileViewModel.swift in Sources */,
 				E5FBE6C62B45D9FE00E27224 /* LandingView.swift in Sources */,
 				E5F4543F2B2E30380080AE4D /* ProfileView.swift in Sources */,
 				E5F454292B2E19E40080AE4D /* ContentView.swift in Sources */,

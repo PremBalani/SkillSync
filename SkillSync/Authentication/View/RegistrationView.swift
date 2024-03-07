@@ -97,6 +97,28 @@ struct RegistrationView: View {
                 .padding(.horizontal, 37)
                 
                 HStack {
+                    Image(systemName: "building")
+                        .foregroundStyle(.mediumBlue)
+                        .imageScale(.large)
+                        .fontWeight(.bold)
+                    
+                    TextField("",
+                              text: $viewModel.school,
+                              prompt: Text("School")
+                        .foregroundStyle(.mediumBlue)
+                        .font(.custom("Lato-Black", size: 12))
+                    )
+                    .foregroundStyle(.mediumBlue)
+                    .font(.custom("Lato-Black", size: 12))
+                    .textInputAutocapitalization(.never)
+                    .autocorrectionDisabled()
+                }
+                .padding(12)
+                .background(.babyBlue.opacity(0.4))
+                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
+                .padding(.horizontal, 37)
+                
+                HStack {
                     Image(systemName: "book")
                         .foregroundStyle(.mediumBlue)
                         .imageScale(.large)
@@ -119,6 +141,7 @@ struct RegistrationView: View {
                 .background(.babyBlue.opacity(0.4))
                 .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
                 .padding(.horizontal, 37)
+                
             }
             
             Button {

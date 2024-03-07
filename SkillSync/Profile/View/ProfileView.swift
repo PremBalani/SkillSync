@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ProfileView: View {
     let user: User
+    @State private var showEditProfile = false
+    
     var body: some View {
         NavigationStack {
             ScrollView(){
@@ -163,8 +165,20 @@ struct ProfileView: View {
                                 .fontWeight(.bold)
                         }
                     }
+                    
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button {
+                            showEditProfile.toggle()
+                        } label: {
+                            Image(systemName: "gear")
+                                .fontWeight(.bold)
+                        }
+                    }
                 }
             }
+        }
+        .fullScreenCover(isPresented: $showEditProfile){
+            EditProfileView(user: user)
         }
     }
 }
