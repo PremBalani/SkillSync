@@ -18,15 +18,7 @@ struct ProfileView: View {
                     
                     VStack(alignment: .center, spacing:10) {
                         // Change UploadCloudImage to the Man Symbol Image
-                        Image(user.profileImageUrl ?? "UploadCloudImage")
-                            .resizable()
-                            .frame(width: 124, height: 124)
-                            .scaledToFit()
-                            .clipShape(Circle())
-                            .overlay {
-                                Circle()
-                                    .stroke(.navyBlue, lineWidth: 3.0)
-                            }
+                        CircularProfileImageView(user: user)
                         
                         Text("\(user.fullname)'s Portfolio")
                             .font(.custom("Lato-Black", size: 32))
@@ -54,6 +46,7 @@ struct ProfileView: View {
                                                 .stroke(.mediumBlue, lineWidth: 1)
                                                 .frame(width: 85, height: 85)
                                         )
+                                    
                                 }
                             }
                         }
