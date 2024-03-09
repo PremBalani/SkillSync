@@ -126,9 +126,38 @@
 		E53884602B9AD91C008F37F6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E5F454342B2E2DD10080AE4D /* MainTabView.swift */,
 				E53884612B9AD92D008F37F6 /* CircularProfileImageView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		E53884632B9C00F8008F37F6 /* EditPortfolio */ = {
+			isa = PBXGroup;
+			children = (
+				E53884642B9C0104008F37F6 /* View */,
+			);
+			path = EditPortfolio;
+			sourceTree = "<group>";
+		};
+		E53884642B9C0104008F37F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5F4543A2B2E30080080AE4D /* EditPortfolioView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E53884652B9C16A2008F37F6 /* TabBarScreens */ = {
+			isa = PBXGroup;
+			children = (
+				E53884632B9C00F8008F37F6 /* EditPortfolio */,
+				E53884532B9919AF008F37F6 /* Profile */,
+				E5F454402B2E30A60080AE4D /* HomeFeedView.swift */,
+				E5F454382B2E2FB10080AE4D /* DiscoverView.swift */,
+				E5F4543C2B2E30210080AE4D /* NotificationView.swift */,
+			);
+			path = TabBarScreens;
 			sourceTree = "<group>";
 		};
 		E56E90522B471C3300CB3894 /* Authentication */ = {
@@ -231,21 +260,16 @@
 		E5F454252B2E19E40080AE4D /* SkillSync */ = {
 			isa = PBXGroup;
 			children = (
+				E5F454262B2E19E40080AE4D /* SkillSyncApp.swift */,
+				E53884652B9C16A2008F37F6 /* TabBarScreens */,
 				E53884602B9AD91C008F37F6 /* Components */,
 				E538845A2B9AD010008F37F6 /* Services */,
-				E5B491A92B4379BA00B60AC3 /* Info.plist */,
 				E5B491A62B43791D00B60AC3 /* Fonts */,
-				E5F454262B2E19E40080AE4D /* SkillSyncApp.swift */,
 				E56E90592B47200D00CB3894 /* Root */,
 				E56E90522B471C3300CB3894 /* Authentication */,
 				E5EB27AF2B3F6E94003001DE /* Model */,
-				E5F454342B2E2DD10080AE4D /* MainTabView.swift */,
-				E5F454402B2E30A60080AE4D /* HomeFeedView.swift */,
-				E5F454382B2E2FB10080AE4D /* DiscoverView.swift */,
-				E5F4543A2B2E30080080AE4D /* EditPortfolioView.swift */,
-				E5F4543C2B2E30210080AE4D /* NotificationView.swift */,
-				E53884532B9919AF008F37F6 /* Profile */,
 				E5F4542A2B2E19EB0080AE4D /* Assets.xcassets */,
+				E5B491A92B4379BA00B60AC3 /* Info.plist */,
 				E5EB27B42B4100B2003001DE /* GoogleService-Info.plist */,
 				E5F4542C2B2E19EB0080AE4D /* Preview Content */,
 			);

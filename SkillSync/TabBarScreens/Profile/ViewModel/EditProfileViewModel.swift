@@ -25,6 +25,10 @@ class EditProfileViewModel: ObservableObject {
     
     init(user: User) {
         self.user = user
+        
+        self.newName = user.fullname
+        self.newGrade = user.grade
+        self.newSchool = user.school
     }
     
     func loadImage(fromItem item: PhotosPickerItem?) async {
