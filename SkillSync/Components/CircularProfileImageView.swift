@@ -9,11 +9,12 @@ import SwiftUI
 
 struct CircularProfileImageView: View {
     let user: User
+    let size: CGFloat
     var body: some View {
         if let imageUrl = user.profileImageUrl {
             KFImage(URL(string: imageUrl))
                 .resizable()
-                .frame(width: 124, height: 124)
+                .frame(width: size, height: size)
                 .scaledToFill()
                 .clipShape(Circle())
                 .overlay {
@@ -23,7 +24,7 @@ struct CircularProfileImageView: View {
         } else {
             Image("DefaultProfileImage")
                 .resizable()
-                .frame(width: 124, height: 124)
+                .frame(width: size, height: size)
                 .scaledToFit()
                 .clipShape(Circle())
                 .overlay {
@@ -35,5 +36,5 @@ struct CircularProfileImageView: View {
 }
 
 #Preview {
-    CircularProfileImageView(user: User.MOCK_USERS[0])
+    CircularProfileImageView(user: User.MOCK_USERS[0], size: 124)
 }

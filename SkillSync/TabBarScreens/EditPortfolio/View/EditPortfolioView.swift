@@ -8,107 +8,95 @@
 import SwiftUI
 
 struct EditPortfolioView: View {
-    @State private var isEditingProjects = false
-    @State private var isEditingAcademicAchievements = false
-    @State private var isEditingCommunityService = false
-    @State private var isEditingAthleticAchievements = false
-    @State private var isEditingWorkExperience = false
-    @State private var isEditingClubsAndOrganizations = false
-    @State private var isEditingSchoolTranscript = false
-    
+    let user: User
+    @Environment(\.dismiss) var dismiss
     var body: some View {
-        VStack {
-            VStack(alignment: .leading, spacing: 10) {
-                Text("Sync your Portfolio")
-                    .font(.custom("Lato-Black", size: 24))
-                    .foregroundStyle(.navyBlue)
-                Text("Select the category to add content to your portfolio")
-                    .font(.custom("Lato-Regular", size: 12))
-                    .foregroundStyle(.companyOrange)
-            }
-            .padding(.leading, 40)
-            .padding(.top, 130)
-            .padding(.bottom, 60)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            
-            VStack(spacing: 25) {
-                HStack(spacing: 15) {
-                    Button {
-                        isEditingProjects.toggle()
-                    } label: {
-                        Text("Projects")
-                            .portfolioButtonStyle()
+        NavigationStack() {
+            VStack {
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Sync your Portfolio")
+                        .font(.custom("Lato-Black", size: 24))
+                        .foregroundStyle(.navyBlue)
+                    Text("Select the category to add content to your portfolio")
+                        .font(.custom("Lato-Regular", size: 12))
+                        .foregroundStyle(.companyOrange)
+                }
+                .padding(.leading, 40)
+                .padding(.top, 130)
+                .padding(.bottom, 60)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                
+                VStack(spacing: 25) {
+                    HStack(spacing: 15) {
+                        NavigationLink {
+                            AddProjectImageView(user: user)
+                                .navigationBarBackButtonHidden()
+                        } label: {
+                            Text("Projects")
+                                .portfolioButtonStyle()
+                        }
+                        NavigationLink {
+                            Text("hi")
+                        } label: {
+                            Text("Academic Achievements")
+                                .portfolioButtonStyle()
+                        }
                     }
                     
-                    Button {
-                        isEditingAcademicAchievements.toggle()
+                    HStack(spacing: 15) {
+                        NavigationLink {
+                            Text("hi")
+                        } label: {
+                            Text("Community Service")
+                                .portfolioButtonStyle()
+                        }
+                        
+                        NavigationLink {
+                            Text("hi")
+                        } label: {
+                            Text("Athletic Achievements")
+                                .portfolioButtonStyle()
+                        }
+                    }
+                    
+                    HStack(spacing: 15) {
+                        NavigationLink {
+                            Text("hi")
+                        } label: {
+                            Text("Work Experience")
+                                .portfolioButtonStyle()
+                        }
+                        
+                        NavigationLink {
+                            Text("hi")
+                        } label: {
+                            Text("Clubs & Organizations")
+                                .portfolioButtonStyle()
+                        }
+                    }
+                    
+                    NavigationLink {
+                        Text("hi")
                     } label: {
-                        Text("Academic Achievements")
+                        Text("School Transcript")
                             .portfolioButtonStyle()
                     }
                 }
-                
-                HStack(spacing: 15) {
-                    Button {
-                        isEditingCommunityService.toggle()
-                    } label: {
-                        Text("Community Service")
-                            .portfolioButtonStyle()
-                    }
-                    
-                    Button {
-                        isEditingAthleticAchievements.toggle()
-                    } label: {
-                        Text("Athletic Achievements")
-                            .portfolioButtonStyle()
-                    }
-                }
-                
-                HStack(spacing: 15) {
-                    Button {
-                        isEditingWorkExperience.toggle()
-                    } label: {
-                        Text("Work Experience")
-                            .portfolioButtonStyle()
-                    }
-                    
-                    Button {
-                        isEditingClubsAndOrganizations.toggle()
-                    } label: {
-                        Text("Clubs & Organizations")
-                            .portfolioButtonStyle()
-                    }
-                }
-                
+                Spacer()
                 Button {
-                    isEditingSchoolTranscript.toggle()
+                    dismiss()
                 } label: {
-                    Text("School Transcript")
-                        .portfolioButtonStyle()
+                    Text("Finish")
+                        .foregroundStyle(.white)
+                        .font(.custom("Lato-Black", size: 12))
+                        .padding(.vertical, 10)
+                        .padding(.horizontal, 20)
+                        .background(.navyBlue)
+                        .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                        .padding(.trailing, 40)
                 }
             }
-            Spacer()
-        }
-        .fullScreenCover(isPresented: $isEditingProjects) {
-            Text("hi")
-        }
-        .fullScreenCover(isPresented: $isEditingAthleticAchievements) {
-            Text("hi")
-        }
-        .fullScreenCover(isPresented: $isEditingCommunityService) {
-            Text("hi")
-        }
-        .fullScreenCover(isPresented: $isEditingAthleticAchievements) {
-            Text("hi")
-        }
-        .fullScreenCover(isPresented: $isEditingWorkExperience) {
-            Text("hi")
-        }
-        .fullScreenCover(isPresented: $isEditingClubsAndOrganizations) {
-            Text("hi")
-        }
-        .fullScreenCover(isPresented: $isEditingSchoolTranscript) {
-            Text("hi")
         }
     }
 }
@@ -133,5 +121,5 @@ extension View {
 }
 
 #Preview {
-    EditPortfolioView()
+    EditPortfolioView(user: User.MOCK_USERS[0])
 }

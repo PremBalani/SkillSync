@@ -32,6 +32,7 @@ enum TabbedItems: Int, CaseIterable {
 struct MainTabView: View {
     let user: User
     @State var selectedTab = 0
+    @State var editingPortfolio = false
     var body: some View {
         ZStack (alignment: .bottom) {
             TabView(selection: $selectedTab) {
@@ -39,8 +40,6 @@ struct MainTabView: View {
                     .tag(0)
                 DiscoverView()
                     .tag(1)
-                EditPortfolioView()
-                    .tag(2)
                 NotificationView()
                     .tag(3)
                 ProfileView(user: user)
@@ -52,6 +51,10 @@ struct MainTabView: View {
                     ForEach((TabbedItems.allCases), id: \.self){ item in
                         Button{
                             selectedTab = item.rawValue
+                            editingPortfolio = selectedTab == 2
+                            if editingPortfolio {
+                                selectedTab = 0
+                            }
                         } label: {
                             CustomTabItem(imageName: item.iconName, isActive: (selectedTab == item.rawValue))
                         }
@@ -64,6 +67,9 @@ struct MainTabView: View {
             .cornerRadius(35)
             .padding(.horizontal, 26)
             
+        }
+        .fullScreenCover(isPresented: $editingPortfolio) {
+            EditPortfolioView(user: user)
         }
     }
 }

@@ -12,11 +12,20 @@
 		E538845C2B9AD01C008F37F6 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E538845B2B9AD01C008F37F6 /* ImageUploader.swift */; };
 		E538845F2B9AD90C008F37F6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E538845E2B9AD90C008F37F6 /* Kingfisher */; };
 		E53884622B9AD92D008F37F6 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53884612B9AD92D008F37F6 /* CircularProfileImageView.swift */; };
+		E53884692B9CC7E4008F37F6 /* AddProjectImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53884682B9CC7E4008F37F6 /* AddProjectImageView.swift */; };
+		E538846C2B9CCD94008F37F6 /* AddProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E538846B2B9CCD94008F37F6 /* AddProjectViewModel.swift */; };
 		E553D2962B3BCC9B007DD8A3 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E553D2952B3BCC9B007DD8A3 /* RegistrationView.swift */; };
+		E565F1432B9CEAA2008422B1 /* AddProjectInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E565F1422B9CEAA2008422B1 /* AddProjectInformationView.swift */; };
 		E56E90552B471DCA00CB3894 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E90542B471DCA00CB3894 /* LoginView.swift */; };
 		E56E90582B471E2F00CB3894 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E90572B471E2F00CB3894 /* Authentication.swift */; };
 		E56E905D2B47208800CB3894 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E905C2B47208800CB3894 /* ContentViewModel.swift */; };
 		E56E90602B47246300CB3894 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E905F2B47246300CB3894 /* RegistrationViewModel.swift */; };
+		E5763B4C2B9D5E4D00253B20 /* HomeFeedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B4B2B9D5E4D00253B20 /* HomeFeedCellView.swift */; };
+		E5763B502B9E5EAF00253B20 /* HomeFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B4F2B9E5EAF00253B20 /* HomeFeedViewModel.swift */; };
+		E5763B522B9E649400253B20 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B512B9E649400253B20 /* UserService.swift */; };
+		E5763B542B9E71D200253B20 /* PortfolioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B532B9E71D200253B20 /* PortfolioService.swift */; };
+		E5763B562B9E829500253B20 /* ProfileFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B552B9E829500253B20 /* ProfileFeedViewModel.swift */; };
+		E5763B582B9E975C00253B20 /* ProjectDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B572B9E975C00253B20 /* ProjectDetailedView.swift */; };
 		E5B491A82B43796900B60AC3 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5B491A72B43795A00B60AC3 /* Lato-Regular.ttf */; };
 		E5B491AB2B437AF300B60AC3 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5B491AA2B437AF200B60AC3 /* Lato-Black.ttf */; };
 		E5B491AD2B437B0600B60AC3 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5B491AC2B437B0600B60AC3 /* Lato-Bold.ttf */; };
@@ -46,11 +55,20 @@
 		E53884582B99635A008F37F6 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		E538845B2B9AD01C008F37F6 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		E53884612B9AD92D008F37F6 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
+		E53884682B9CC7E4008F37F6 /* AddProjectImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectImageView.swift; sourceTree = "<group>"; };
+		E538846B2B9CCD94008F37F6 /* AddProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectViewModel.swift; sourceTree = "<group>"; };
 		E553D2952B3BCC9B007DD8A3 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		E565F1422B9CEAA2008422B1 /* AddProjectInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectInformationView.swift; sourceTree = "<group>"; };
 		E56E90542B471DCA00CB3894 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E56E90572B471E2F00CB3894 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		E56E905C2B47208800CB3894 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		E56E905F2B47246300CB3894 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		E5763B4B2B9D5E4D00253B20 /* HomeFeedCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedCellView.swift; sourceTree = "<group>"; };
+		E5763B4F2B9E5EAF00253B20 /* HomeFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedViewModel.swift; sourceTree = "<group>"; };
+		E5763B512B9E649400253B20 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		E5763B532B9E71D200253B20 /* PortfolioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioService.swift; sourceTree = "<group>"; };
+		E5763B552B9E829500253B20 /* ProfileFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFeedViewModel.swift; sourceTree = "<group>"; };
+		E5763B572B9E975C00253B20 /* ProjectDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailedView.swift; sourceTree = "<group>"; };
 		E5B491A72B43795A00B60AC3 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		E5B491A92B4379BA00B60AC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E5B491AA2B437AF200B60AC3 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
@@ -111,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				E53884582B99635A008F37F6 /* EditProfileViewModel.swift */,
+				E5763B552B9E829500253B20 /* ProfileFeedViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -119,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				E538845B2B9AD01C008F37F6 /* ImageUploader.swift */,
+				E5763B512B9E649400253B20 /* UserService.swift */,
+				E5763B532B9E71D200253B20 /* PortfolioService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -136,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				E53884642B9C0104008F37F6 /* View */,
+				E538846A2B9CCD67008F37F6 /* ViewModel */,
 			);
 			path = EditPortfolio;
 			sourceTree = "<group>";
@@ -144,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				E5F4543A2B2E30080080AE4D /* EditPortfolioView.swift */,
+				E53884682B9CC7E4008F37F6 /* AddProjectImageView.swift */,
+				E565F1422B9CEAA2008422B1 /* AddProjectInformationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -153,11 +177,19 @@
 			children = (
 				E53884632B9C00F8008F37F6 /* EditPortfolio */,
 				E53884532B9919AF008F37F6 /* Profile */,
-				E5F454402B2E30A60080AE4D /* HomeFeedView.swift */,
+				E5763B4A2B9D5E3B00253B20 /* HomeFeed */,
 				E5F454382B2E2FB10080AE4D /* DiscoverView.swift */,
 				E5F4543C2B2E30210080AE4D /* NotificationView.swift */,
 			);
 			path = TabBarScreens;
+			sourceTree = "<group>";
+		};
+		E538846A2B9CCD67008F37F6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E538846B2B9CCD94008F37F6 /* AddProjectViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E56E90522B471C3300CB3894 /* Authentication */ = {
@@ -218,6 +250,33 @@
 			children = (
 				E56E905F2B47246300CB3894 /* RegistrationViewModel.swift */,
 				E5DD549F2B487E0F00A39857 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E5763B4A2B9D5E3B00253B20 /* HomeFeed */ = {
+			isa = PBXGroup;
+			children = (
+				E5763B4D2B9E5E8100253B20 /* View */,
+				E5763B4E2B9E5E8B00253B20 /* ViewModel */,
+			);
+			path = HomeFeed;
+			sourceTree = "<group>";
+		};
+		E5763B4D2B9E5E8100253B20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5F454402B2E30A60080AE4D /* HomeFeedView.swift */,
+				E5763B4B2B9D5E4D00253B20 /* HomeFeedCellView.swift */,
+				E5763B572B9E975C00253B20 /* ProjectDetailedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E5763B4E2B9E5E8B00253B20 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E5763B4F2B9E5EAF00253B20 /* HomeFeedViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -371,22 +430,31 @@
 			files = (
 				E53884552B9919C9008F37F6 /* EditProfileView.swift in Sources */,
 				E53884592B99635A008F37F6 /* EditProfileViewModel.swift in Sources */,
+				E5763B582B9E975C00253B20 /* ProjectDetailedView.swift in Sources */,
+				E5763B522B9E649400253B20 /* UserService.swift in Sources */,
 				E5FBE6C62B45D9FE00E27224 /* LandingView.swift in Sources */,
 				E5F4543F2B2E30380080AE4D /* ProfileView.swift in Sources */,
 				E5F454292B2E19E40080AE4D /* ContentView.swift in Sources */,
 				E5F4543D2B2E30210080AE4D /* NotificationView.swift in Sources */,
 				E5DD54A02B487E0F00A39857 /* LoginViewModel.swift in Sources */,
+				E5763B562B9E829500253B20 /* ProfileFeedViewModel.swift in Sources */,
 				E53884622B9AD92D008F37F6 /* CircularProfileImageView.swift in Sources */,
 				E56E90582B471E2F00CB3894 /* Authentication.swift in Sources */,
 				E5F454392B2E2FB20080AE4D /* DiscoverView.swift in Sources */,
 				E5F4543B2B2E30080080AE4D /* EditPortfolioView.swift in Sources */,
+				E565F1432B9CEAA2008422B1 /* AddProjectInformationView.swift in Sources */,
 				E56E90552B471DCA00CB3894 /* LoginView.swift in Sources */,
 				E5F454412B2E30A60080AE4D /* HomeFeedView.swift in Sources */,
 				E5F454272B2E19E40080AE4D /* SkillSyncApp.swift in Sources */,
+				E5763B4C2B9D5E4D00253B20 /* HomeFeedCellView.swift in Sources */,
+				E53884692B9CC7E4008F37F6 /* AddProjectImageView.swift in Sources */,
 				E56E90602B47246300CB3894 /* RegistrationViewModel.swift in Sources */,
+				E538846C2B9CCD94008F37F6 /* AddProjectViewModel.swift in Sources */,
+				E5763B502B9E5EAF00253B20 /* HomeFeedViewModel.swift in Sources */,
 				E56E905D2B47208800CB3894 /* ContentViewModel.swift in Sources */,
 				E5F454352B2E2DD10080AE4D /* MainTabView.swift in Sources */,
 				E5E994C82B48F3C100E85CCD /* Project.swift in Sources */,
+				E5763B542B9E71D200253B20 /* PortfolioService.swift in Sources */,
 				E538845C2B9AD01C008F37F6 /* ImageUploader.swift in Sources */,
 				E553D2962B3BCC9B007DD8A3 /* RegistrationView.swift in Sources */,
 				E5EB27B12B3F6ED6003001DE /* User.swift in Sources */,

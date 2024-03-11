@@ -55,7 +55,7 @@ struct EditProfileView: View {
                             .clipShape(Circle())
                             .frame(width: 128, height: 128)
                     } else {
-                        CircularProfileImageView(user: viewModel.user)
+                        CircularProfileImageView(user: viewModel.user, size: 124)
                     }
                     Text("Edit Profile Picture")
                         .font(.custom("Lato-Regular", size: 12))

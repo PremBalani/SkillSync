@@ -6,10 +6,17 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ProfileView: View {
     let user: User
     @State private var showEditProfile = false
+    @StateObject var viewModel: ProfileFeedViewModel
+    
+    init(user: User) {
+        self._viewModel = StateObject(wrappedValue: ProfileFeedViewModel(user: user))
+        self.user = user
+    }
     
     var body: some View {
         NavigationStack {
@@ -18,12 +25,12 @@ struct ProfileView: View {
                     
                     VStack(alignment: .center, spacing:10) {
                         // Change UploadCloudImage to the Man Symbol Image
-                        CircularProfileImageView(user: user)
+                        CircularProfileImageView(user: user, size: 124)
                         
                         Text("\(user.fullname)'s Portfolio")
                             .font(.custom("Lato-Black", size: 32))
                             .foregroundStyle(.navyBlue)
-                        Text("Grade Level:  \(user.grade)")
+                        Text("\(user.grade)th Grader at \(user.school)  ")
                             .font(.custom("Lato-Bold", size: 16))
                             .foregroundStyle(.companyOrange)
                     }
@@ -33,10 +40,10 @@ struct ProfileView: View {
                         Text("Projects")
                             .font(.custom("Lato-Black", size: 14))
                             .foregroundStyle(.navyBlue)
-                        ScrollView(.horizontal) {
+                        ScrollView(.horizontal, showsIndicators: false) {
                             HStack {
-                                ForEach(Project.MOCK_PROJECTS) { project in
-                                    Image(project.coverImageURL)
+                                ForEach(viewModel.projects) { project in
+                                    KFImage(URL(string:project.coverImageURL))
                                         .resizable()
                                         .frame(width: 85, height: 85)
                                         .scaledToFit()
