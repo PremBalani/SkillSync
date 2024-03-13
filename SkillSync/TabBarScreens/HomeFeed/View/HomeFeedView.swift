@@ -11,7 +11,7 @@ struct HomeFeedView: View {
     @StateObject var viewModel = HomeFeedViewModel()
     var body: some View {
         NavigationStack {
-            ScrollView {
+            ScrollView() {
                 VStack (alignment: .leading){
                     VStack(alignment: .leading, spacing: 10) {
                         Text("Discover")
@@ -30,6 +30,7 @@ struct HomeFeedView: View {
                     }
                 }
             }
+            .scrollIndicators(.hidden)
             .refreshable {
                 Task { try await viewModel.fetchProjects() }
             }

@@ -15,12 +15,14 @@ struct HomeFeedCellView: View {
             ZStack (alignment: .topLeading) {
                 NavigationLink {
                     ProjectDetailedView(user: user, project: project)
+                        .navigationBarBackButtonHidden()
                 } label: {
-                    ZStack(alignment: .bottom) {
+                    ZStack(alignment: .bottomLeading) {
                         KFImage(URL(string: project.coverImageURL))
                             .resizable()
+                            .frame(width: 300, height: 300)
                             .scaledToFill()
-                            .frame(width: 320, height: 300)
+                            
                         
                         VStack (alignment: .leading, spacing: 10) {
                             Text(project.title)
@@ -31,16 +33,16 @@ struct HomeFeedCellView: View {
                                 .lineLimit(2, reservesSpace: true)
                         }
                         .foregroundStyle(.white)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.horizontal, 20)
+                        .padding(.leading, 20)
                         .padding(.vertical, 30)
-                        .background(LinearGradient(colors: [.black, .black.opacity(0.3)], startPoint: .bottom, endPoint: .top))
+                        .background(LinearGradient(colors: [.black, .black.opacity(0.3)], startPoint: .bottom, endPoint: .top).frame(width: 1000))
                         .multilineTextAlignment(.leading)
                     }
                 }
                 
                 NavigationLink {
                     ProfileView(user: user)
+                        .navigationBarBackButtonHidden()
                 } label: {
                     CircularProfileImageView(user: user, size: 50)
                         .padding()

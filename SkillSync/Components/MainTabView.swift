@@ -42,7 +42,7 @@ struct MainTabView: View {
                     .tag(1)
                 NotificationView()
                     .tag(3)
-                ProfileView(user: user)
+                CurrentUserProfileView(user: user)
                     .tag(4)
             }
             

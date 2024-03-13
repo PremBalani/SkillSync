@@ -26,6 +26,12 @@
 		E5763B542B9E71D200253B20 /* PortfolioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B532B9E71D200253B20 /* PortfolioService.swift */; };
 		E5763B562B9E829500253B20 /* ProfileFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B552B9E829500253B20 /* ProfileFeedViewModel.swift */; };
 		E5763B582B9E975C00253B20 /* ProjectDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B572B9E975C00253B20 /* ProjectDetailedView.swift */; };
+		E5763B5A2B9F461300253B20 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B592B9F461300253B20 /* ProfileView.swift */; };
+		E5763B5C2BA122FF00253B20 /* AddResumeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B5B2BA122FF00253B20 /* AddResumeItemView.swift */; };
+		E5763B5E2BA124C500253B20 /* CustomInputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B5D2BA124C500253B20 /* CustomInputFieldView.swift */; };
+		E5763B602BA1278000253B20 /* ResumeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B5F2BA1278000253B20 /* ResumeItemView.swift */; };
+		E5763B632BA12CA600253B20 /* ResumeItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B622BA12CA600253B20 /* ResumeItemViewModel.swift */; };
+		E5763B652BA13BD900253B20 /* ResumeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B642BA13BD900253B20 /* ResumeItem.swift */; };
 		E5B491A82B43796900B60AC3 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5B491A72B43795A00B60AC3 /* Lato-Regular.ttf */; };
 		E5B491AB2B437AF300B60AC3 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5B491AA2B437AF200B60AC3 /* Lato-Black.ttf */; };
 		E5B491AD2B437B0600B60AC3 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5B491AC2B437B0600B60AC3 /* Lato-Bold.ttf */; };
@@ -41,7 +47,7 @@
 		E5F454392B2E2FB20080AE4D /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F454382B2E2FB10080AE4D /* DiscoverView.swift */; };
 		E5F4543B2B2E30080080AE4D /* EditPortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4543A2B2E30080080AE4D /* EditPortfolioView.swift */; };
 		E5F4543D2B2E30210080AE4D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4543C2B2E30210080AE4D /* NotificationView.swift */; };
-		E5F4543F2B2E30380080AE4D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4543E2B2E30370080AE4D /* ProfileView.swift */; };
+		E5F4543F2B2E30380080AE4D /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4543E2B2E30370080AE4D /* CurrentUserProfileView.swift */; };
 		E5F454412B2E30A60080AE4D /* HomeFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F454402B2E30A60080AE4D /* HomeFeedView.swift */; };
 		E5FBE6C62B45D9FE00E27224 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FBE6C52B45D9FE00E27224 /* LandingView.swift */; };
 		E5FBE6D52B45DE9600E27224 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E5FBE6D42B45DE9600E27224 /* FirebaseAuth */; };
@@ -69,6 +75,13 @@
 		E5763B532B9E71D200253B20 /* PortfolioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioService.swift; sourceTree = "<group>"; };
 		E5763B552B9E829500253B20 /* ProfileFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFeedViewModel.swift; sourceTree = "<group>"; };
 		E5763B572B9E975C00253B20 /* ProjectDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailedView.swift; sourceTree = "<group>"; };
+		E5763B592B9F461300253B20 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E5763B5B2BA122FF00253B20 /* AddResumeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddResumeItemView.swift; sourceTree = "<group>"; };
+		E5763B5D2BA124C500253B20 /* CustomInputFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputFieldView.swift; sourceTree = "<group>"; };
+		E5763B5F2BA1278000253B20 /* ResumeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeItemView.swift; sourceTree = "<group>"; };
+		E5763B612BA1293E00253B20 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Italic.ttf"; path = "../../../../Downloads/Lato/Lato-Italic.ttf"; sourceTree = "<group>"; };
+		E5763B622BA12CA600253B20 /* ResumeItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeItemViewModel.swift; sourceTree = "<group>"; };
+		E5763B642BA13BD900253B20 /* ResumeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeItem.swift; sourceTree = "<group>"; };
 		E5B491A72B43795A00B60AC3 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		E5B491A92B4379BA00B60AC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E5B491AA2B437AF200B60AC3 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
@@ -86,7 +99,7 @@
 		E5F454382B2E2FB10080AE4D /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		E5F4543A2B2E30080080AE4D /* EditPortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPortfolioView.swift; sourceTree = "<group>"; };
 		E5F4543C2B2E30210080AE4D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
-		E5F4543E2B2E30370080AE4D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E5F4543E2B2E30370080AE4D /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		E5F454402B2E30A60080AE4D /* HomeFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedView.swift; sourceTree = "<group>"; };
 		E5FBE6C52B45D9FE00E27224 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,7 +132,7 @@
 		E53884562B99632E008F37F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E5F4543E2B2E30370080AE4D /* ProfileView.swift */,
+				E5F4543E2B2E30370080AE4D /* CurrentUserProfileView.swift */,
 				E53884542B9919C9008F37F6 /* EditProfileView.swift */,
 			);
 			path = View;
@@ -147,8 +160,12 @@
 		E53884602B9AD91C008F37F6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E5763B5B2BA122FF00253B20 /* AddResumeItemView.swift */,
 				E5F454342B2E2DD10080AE4D /* MainTabView.swift */,
 				E53884612B9AD92D008F37F6 /* CircularProfileImageView.swift */,
+				E5763B592B9F461300253B20 /* ProfileView.swift */,
+				E5763B5D2BA124C500253B20 /* CustomInputFieldView.swift */,
+				E5763B5F2BA1278000253B20 /* ResumeItemView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -188,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				E538846B2B9CCD94008F37F6 /* AddProjectViewModel.swift */,
+				E5763B622BA12CA600253B20 /* ResumeItemViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -284,6 +302,7 @@
 		E5B491A62B43791D00B60AC3 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				E5763B612BA1293E00253B20 /* Lato-Italic.ttf */,
 				E5B491A72B43795A00B60AC3 /* Lato-Regular.ttf */,
 				E5B491AA2B437AF200B60AC3 /* Lato-Black.ttf */,
 				E5B491AC2B437B0600B60AC3 /* Lato-Bold.ttf */,
@@ -296,6 +315,7 @@
 			children = (
 				E5EB27B02B3F6ED6003001DE /* User.swift */,
 				E5E994C72B48F3C100E85CCD /* Project.swift */,
+				E5763B642BA13BD900253B20 /* ResumeItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -428,22 +448,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5763B602BA1278000253B20 /* ResumeItemView.swift in Sources */,
 				E53884552B9919C9008F37F6 /* EditProfileView.swift in Sources */,
 				E53884592B99635A008F37F6 /* EditProfileViewModel.swift in Sources */,
 				E5763B582B9E975C00253B20 /* ProjectDetailedView.swift in Sources */,
 				E5763B522B9E649400253B20 /* UserService.swift in Sources */,
 				E5FBE6C62B45D9FE00E27224 /* LandingView.swift in Sources */,
-				E5F4543F2B2E30380080AE4D /* ProfileView.swift in Sources */,
+				E5F4543F2B2E30380080AE4D /* CurrentUserProfileView.swift in Sources */,
 				E5F454292B2E19E40080AE4D /* ContentView.swift in Sources */,
 				E5F4543D2B2E30210080AE4D /* NotificationView.swift in Sources */,
 				E5DD54A02B487E0F00A39857 /* LoginViewModel.swift in Sources */,
 				E5763B562B9E829500253B20 /* ProfileFeedViewModel.swift in Sources */,
+				E5763B5A2B9F461300253B20 /* ProfileView.swift in Sources */,
 				E53884622B9AD92D008F37F6 /* CircularProfileImageView.swift in Sources */,
 				E56E90582B471E2F00CB3894 /* Authentication.swift in Sources */,
 				E5F454392B2E2FB20080AE4D /* DiscoverView.swift in Sources */,
 				E5F4543B2B2E30080080AE4D /* EditPortfolioView.swift in Sources */,
 				E565F1432B9CEAA2008422B1 /* AddProjectInformationView.swift in Sources */,
 				E56E90552B471DCA00CB3894 /* LoginView.swift in Sources */,
+				E5763B5E2BA124C500253B20 /* CustomInputFieldView.swift in Sources */,
 				E5F454412B2E30A60080AE4D /* HomeFeedView.swift in Sources */,
 				E5F454272B2E19E40080AE4D /* SkillSyncApp.swift in Sources */,
 				E5763B4C2B9D5E4D00253B20 /* HomeFeedCellView.swift in Sources */,
@@ -456,7 +479,10 @@
 				E5E994C82B48F3C100E85CCD /* Project.swift in Sources */,
 				E5763B542B9E71D200253B20 /* PortfolioService.swift in Sources */,
 				E538845C2B9AD01C008F37F6 /* ImageUploader.swift in Sources */,
+				E5763B652BA13BD900253B20 /* ResumeItem.swift in Sources */,
 				E553D2962B3BCC9B007DD8A3 /* RegistrationView.swift in Sources */,
+				E5763B632BA12CA600253B20 /* ResumeItemViewModel.swift in Sources */,
+				E5763B5C2BA122FF00253B20 /* AddResumeItemView.swift in Sources */,
 				E5EB27B12B3F6ED6003001DE /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

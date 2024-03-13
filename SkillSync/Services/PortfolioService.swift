@@ -44,4 +44,13 @@ class PortfolioService {
         
         return projects
     }
+    
+    static func fetchUserResumeItems(uid: String, item: String) async throws -> [ResumeItem] {
+        let snapshot = try await Firestore.firestore().collection(item).whereField("ownerUid", isEqualTo: uid).getDocuments()
+        var items = try snapshot.documents.compactMap { document in
+            return try document.data(as: ResumeItem.self)
+        }
+        
+        return items
+    }
 }

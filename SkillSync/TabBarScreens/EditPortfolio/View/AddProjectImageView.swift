@@ -71,6 +71,7 @@ struct AddProjectImageView: View {
                     dismiss()
                 } label: {
                     Image(systemName: "xmark")
+                        .fontWeight(.black)
                 }
             }
         }

@@ -30,6 +30,7 @@ struct ProjectDetailedView: View {
                         
                         NavigationLink {
                             ProfileView(user: user)
+                                .navigationBarBackButtonHidden()
                         } label: {
                             CircularProfileImageView(user: user, size: 50)
                         }

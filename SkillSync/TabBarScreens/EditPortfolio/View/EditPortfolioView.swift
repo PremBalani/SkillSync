@@ -36,7 +36,8 @@ struct EditPortfolioView: View {
                                 .portfolioButtonStyle()
                         }
                         NavigationLink {
-                            Text("hi")
+                            AddResumeItemView(user: user, section: "Academic Achievements", title: "Title", subheader: "Role", bodyText: "Description")
+                                .navigationBarBackButtonHidden()
                         } label: {
                             Text("Academic Achievements")
                                 .portfolioButtonStyle()
@@ -45,14 +46,16 @@ struct EditPortfolioView: View {
                     
                     HStack(spacing: 15) {
                         NavigationLink {
-                            Text("hi")
+                            AddResumeItemView(user: user, section: "Community Service", title: "Organization", subheader: "Role", bodyText: "Description")
+                                .navigationBarBackButtonHidden()
                         } label: {
                             Text("Community Service")
                                 .portfolioButtonStyle()
                         }
                         
                         NavigationLink {
-                            Text("hi")
+                            AddResumeItemView(user: user, section: "Athletic Achievements", title: "Title", subheader: "Sport", bodyText: "Description")
+                                .navigationBarBackButtonHidden()
                         } label: {
                             Text("Athletic Achievements")
                                 .portfolioButtonStyle()
@@ -61,24 +64,25 @@ struct EditPortfolioView: View {
                     
                     HStack(spacing: 15) {
                         NavigationLink {
-                            Text("hi")
+                            AddResumeItemView(user: user, section: "Work Experience", title: "Title", subheader: "Position", bodyText: "Description")
+                                .navigationBarBackButtonHidden()
                         } label: {
                             Text("Work Experience")
                                 .portfolioButtonStyle()
                         }
                         
                         NavigationLink {
-                            Text("hi")
+                            AddResumeItemView(user: user, section: "Clubs & Organizations", title: "Title", subheader: "Position", bodyText: "Description")
+                                .navigationBarBackButtonHidden()
                         } label: {
                             Text("Clubs & Organizations")
                                 .portfolioButtonStyle()
                         }
                     }
-                    
                     NavigationLink {
-                        Text("hi")
+                        Text("not done yet")
                     } label: {
-                        Text("School Transcript")
+                        Text("High School Transcript")
                             .portfolioButtonStyle()
                     }
                 }
