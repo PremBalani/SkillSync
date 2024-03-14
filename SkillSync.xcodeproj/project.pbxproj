@@ -32,6 +32,7 @@
 		E5763B602BA1278000253B20 /* ResumeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B5F2BA1278000253B20 /* ResumeItemView.swift */; };
 		E5763B632BA12CA600253B20 /* ResumeItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B622BA12CA600253B20 /* ResumeItemViewModel.swift */; };
 		E5763B652BA13BD900253B20 /* ResumeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B642BA13BD900253B20 /* ResumeItem.swift */; };
+		E5763B6A2BA237CD00253B20 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B692BA237CD00253B20 /* SearchViewModel.swift */; };
 		E5B491A82B43796900B60AC3 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5B491A72B43795A00B60AC3 /* Lato-Regular.ttf */; };
 		E5B491AB2B437AF300B60AC3 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5B491AA2B437AF200B60AC3 /* Lato-Black.ttf */; };
 		E5B491AD2B437B0600B60AC3 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5B491AC2B437B0600B60AC3 /* Lato-Bold.ttf */; };
@@ -44,7 +45,7 @@
 		E5F4542B2B2E19EB0080AE4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5F4542A2B2E19EB0080AE4D /* Assets.xcassets */; };
 		E5F4542E2B2E19EB0080AE4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5F4542D2B2E19EB0080AE4D /* Preview Assets.xcassets */; };
 		E5F454352B2E2DD10080AE4D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F454342B2E2DD10080AE4D /* MainTabView.swift */; };
-		E5F454392B2E2FB20080AE4D /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F454382B2E2FB10080AE4D /* DiscoverView.swift */; };
+		E5F454392B2E2FB20080AE4D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F454382B2E2FB10080AE4D /* SearchView.swift */; };
 		E5F4543B2B2E30080080AE4D /* EditPortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4543A2B2E30080080AE4D /* EditPortfolioView.swift */; };
 		E5F4543D2B2E30210080AE4D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4543C2B2E30210080AE4D /* NotificationView.swift */; };
 		E5F4543F2B2E30380080AE4D /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4543E2B2E30370080AE4D /* CurrentUserProfileView.swift */; };
@@ -82,6 +83,7 @@
 		E5763B612BA1293E00253B20 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Italic.ttf"; path = "../../../../Downloads/Lato/Lato-Italic.ttf"; sourceTree = "<group>"; };
 		E5763B622BA12CA600253B20 /* ResumeItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeItemViewModel.swift; sourceTree = "<group>"; };
 		E5763B642BA13BD900253B20 /* ResumeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeItem.swift; sourceTree = "<group>"; };
+		E5763B692BA237CD00253B20 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		E5B491A72B43795A00B60AC3 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		E5B491A92B4379BA00B60AC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E5B491AA2B437AF200B60AC3 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
@@ -96,7 +98,7 @@
 		E5F4542A2B2E19EB0080AE4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5F4542D2B2E19EB0080AE4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E5F454342B2E2DD10080AE4D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		E5F454382B2E2FB10080AE4D /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		E5F454382B2E2FB10080AE4D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		E5F4543A2B2E30080080AE4D /* EditPortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPortfolioView.swift; sourceTree = "<group>"; };
 		E5F4543C2B2E30210080AE4D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		E5F4543E2B2E30370080AE4D /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
@@ -195,7 +197,7 @@
 				E53884632B9C00F8008F37F6 /* EditPortfolio */,
 				E53884532B9919AF008F37F6 /* Profile */,
 				E5763B4A2B9D5E3B00253B20 /* HomeFeed */,
-				E5F454382B2E2FB10080AE4D /* DiscoverView.swift */,
+				E5763B682BA2373400253B20 /* Discover */,
 				E5F4543C2B2E30210080AE4D /* NotificationView.swift */,
 			);
 			path = TabBarScreens;
@@ -297,6 +299,15 @@
 				E5763B4F2B9E5EAF00253B20 /* HomeFeedViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E5763B682BA2373400253B20 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				E5F454382B2E2FB10080AE4D /* SearchView.swift */,
+				E5763B692BA237CD00253B20 /* SearchViewModel.swift */,
+			);
+			path = Discover;
 			sourceTree = "<group>";
 		};
 		E5B491A62B43791D00B60AC3 /* Fonts */ = {
@@ -454,6 +465,7 @@
 				E5763B582B9E975C00253B20 /* ProjectDetailedView.swift in Sources */,
 				E5763B522B9E649400253B20 /* UserService.swift in Sources */,
 				E5FBE6C62B45D9FE00E27224 /* LandingView.swift in Sources */,
+				E5763B6A2BA237CD00253B20 /* SearchViewModel.swift in Sources */,
 				E5F4543F2B2E30380080AE4D /* CurrentUserProfileView.swift in Sources */,
 				E5F454292B2E19E40080AE4D /* ContentView.swift in Sources */,
 				E5F4543D2B2E30210080AE4D /* NotificationView.swift in Sources */,
@@ -462,7 +474,7 @@
 				E5763B5A2B9F461300253B20 /* ProfileView.swift in Sources */,
 				E53884622B9AD92D008F37F6 /* CircularProfileImageView.swift in Sources */,
 				E56E90582B471E2F00CB3894 /* Authentication.swift in Sources */,
-				E5F454392B2E2FB20080AE4D /* DiscoverView.swift in Sources */,
+				E5F454392B2E2FB20080AE4D /* SearchView.swift in Sources */,
 				E5F4543B2B2E30080080AE4D /* EditPortfolioView.swift in Sources */,
 				E565F1432B9CEAA2008422B1 /* AddProjectInformationView.swift in Sources */,
 				E56E90552B471DCA00CB3894 /* LoginView.swift in Sources */,

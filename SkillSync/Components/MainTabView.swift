@@ -38,7 +38,7 @@ struct MainTabView: View {
             TabView(selection: $selectedTab) {
                 HomeFeedView()
                     .tag(0)
-                DiscoverView()
+                SearchView(currentUser: user)
                     .tag(1)
                 NotificationView()
                     .tag(3)

@@ -14,9 +14,9 @@ struct CircularProfileImageView: View {
         if let imageUrl = user.profileImageUrl {
             KFImage(URL(string: imageUrl))
                 .resizable()
-                .frame(width: size, height: size)
-                .scaledToFill()
                 .clipShape(Circle())
+                .scaledToFill()
+                .frame(width: size, height: size)
                 .overlay {
                     Circle()
                         .stroke(.navyBlue, lineWidth: 3.0)
@@ -24,9 +24,9 @@ struct CircularProfileImageView: View {
         } else {
             Image("DefaultProfileImage")
                 .resizable()
-                .frame(width: size, height: size)
-                .scaledToFit()
                 .clipShape(Circle())
+                .scaledToFill()
+                .frame(width: size, height: size)
                 .overlay {
                     Circle()
                         .stroke(.navyBlue, lineWidth: 3.0)

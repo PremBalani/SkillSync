@@ -11,6 +11,7 @@ import Kingfisher
 struct ProfileView: View {
     let user: User
     @StateObject var viewModel: ProfileFeedViewModel
+    @Environment(\.dismiss) var dismiss
     
     init(user: User) {
         self._viewModel = StateObject(wrappedValue: ProfileFeedViewModel(user: user))
@@ -20,16 +21,16 @@ struct ProfileView: View {
     var body: some View {
         NavigationStack {
             ScrollView(){
-                VStack(alignment: .center) {
+                LazyVStack(alignment: .center) {
                     
                     VStack(alignment: .center, spacing:10) {
                         // Change UploadCloudImage to the Man Symbol Image
-                        CircularProfileImageView(user: user, size: 124)
+                        CircularProfileImageView(user: viewModel.user, size: 124)
                         
-                        Text("\(user.fullname)'s Portfolio")
+                        Text("\(viewModel.user.fullname)'s Portfolio")
                             .font(.custom("Lato-Black", size: 32))
                             .foregroundStyle(.navyBlue)
-                        Text("\(user.grade)th Grader at \(user.school)  ")
+                        Text("\(viewModel.user.grade)th Grader at \(viewModel.user.school)  ")
                             .font(.custom("Lato-Bold", size: 16))
                             .foregroundStyle(.companyOrange)
                     }
@@ -48,9 +49,8 @@ struct ProfileView: View {
                                                 .navigationBarBackButtonHidden()
                                         } label: {
                                             KFImage(URL(string:project.coverImageURL))
-                                                .resizable()
+                                                .scaledToFill()
                                                 .frame(width: 85, height: 85)
-                                                .scaledToFit()
                                                 .clipShape(RoundedRectangle(cornerRadius: 20))
                                                 .overlay(
                                                     RoundedRectangle(cornerRadius: 20)
@@ -63,6 +63,13 @@ struct ProfileView: View {
                                 }
                             }
                         }
+                        
+                        if viewModel.portfolioIsEmpty {
+                            Text("There is nothing in this portfolio yet...")
+                                .font(.custom("Lato-Bold", size: 15))
+                                .foregroundStyle(.gray)
+                        }
+                        
                         if !viewModel.academicAchievements.isEmpty {
                             VStack(alignment: .leading, spacing: 10) {
                                 ResumeSection(sectionName: "Academic Achievements", items: viewModel.academicAchievements)
@@ -98,6 +105,16 @@ struct ProfileView: View {
                 .padding(.top)
                 .padding(.leading)
                 .toolbar(.hidden, for: .tabBar)
+                .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button {
+                            dismiss()
+                        } label: {
+                            Image(systemName: "chevron.left")
+                                .fontWeight(.bold)
+                        }
+                    }
+                }
                 
             }
         }

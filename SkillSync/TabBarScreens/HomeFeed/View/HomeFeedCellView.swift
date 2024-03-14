@@ -20,8 +20,9 @@ struct HomeFeedCellView: View {
                     ZStack(alignment: .bottomLeading) {
                         KFImage(URL(string: project.coverImageURL))
                             .resizable()
-                            .frame(width: 300, height: 300)
                             .scaledToFill()
+                            .frame(width: 300, height: 300)
+                            
                             
                         
                         VStack (alignment: .leading, spacing: 10) {

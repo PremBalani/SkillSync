@@ -46,13 +46,13 @@ struct EditProfileView: View {
                 .padding(.leading, 40)
                 .padding(.bottom)
                 
-            
             PhotosPicker(selection: $viewModel.selectedImage) {
                 VStack(spacing: 15) {
                     if let image = viewModel.profileImage {
                         image
                             .resizable()
                             .clipShape(Circle())
+                            .scaledToFill()
                             .frame(width: 128, height: 128)
                     } else {
                         CircularProfileImageView(user: viewModel.user, size: 124)

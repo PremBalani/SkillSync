@@ -21,16 +21,16 @@ struct CurrentUserProfileView: View {
     var body: some View {
         NavigationStack {
             ScrollView(){
-                VStack(alignment: .center) {
+                LazyVStack(alignment: .center) {
                     
                     VStack(alignment: .center, spacing:10) {
                         // Change UploadCloudImage to the Man Symbol Image
-                        CircularProfileImageView(user: user, size: 124)
+                        CircularProfileImageView(user: viewModel.user, size: 124)
                         
-                        Text("\(user.fullname)'s Portfolio")
+                        Text("\(viewModel.user.fullname)'s Portfolio")
                             .font(.custom("Lato-Black", size: 32))
                             .foregroundStyle(.navyBlue)
-                        Text("\(user.grade)th Grader at \(user.school)  ")
+                        Text("\(viewModel.user.grade)th Grader at \(viewModel.user.school)  ")
                             .font(.custom("Lato-Bold", size: 16))
                             .foregroundStyle(.companyOrange)
                     }
@@ -64,6 +64,14 @@ struct CurrentUserProfileView: View {
                                 }
                             }
                         }
+                        
+                        if viewModel.portfolioIsEmpty {
+                            Text("There is nothing in this portfolio yet...")
+                                .font(.custom("Lato-Bold", size: 15))
+                                .foregroundStyle(.gray)
+                        }
+                        
+                        
                         if !viewModel.academicAchievements.isEmpty {
                             VStack(alignment: .leading, spacing: 10) {
                                 ResumeSection(sectionName: "Academic Achievements", items: viewModel.academicAchievements)
@@ -142,7 +150,7 @@ struct ResumeSection: View {
                     .font(.custom("Lato-Bold", size: 12))
                     .foregroundStyle(.companyOrange)
                 Text(item.subheader)
-                    .font(.custom("Lato-Italic", size: 12))
+                    .font(.custom("Lato-Regular", size: 12))
                 Text(item.description)
                     .font(.custom("Lato-Regular", size: 12))
             }

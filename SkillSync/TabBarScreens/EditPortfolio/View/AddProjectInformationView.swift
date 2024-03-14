@@ -96,6 +96,7 @@ struct AddProjectInformationView: View {
                     Image(systemName: "checkmark")
                         .fontWeight(.black)
                 }
+                .disabled(viewModel.title.isEmpty || viewModel.headerText.isEmpty || viewModel.description.isEmpty)
             }
         }
     }

@@ -7,20 +7,21 @@
 
 import SwiftUI
 
-struct DiscoverView: View {
+struct SearchView: View {
+    @State var currentUser: User
     @State private var searchText = ""
+    @State var viewModel = SearchViewModel()
     var body: some View {
         NavigationStack {
             ScrollView {
                 LazyVStack (spacing: 12) {
-                    ForEach(User.MOCK_USERS) { user in
-                        NavigationLink(value: user) {
+                    ForEach(viewModel.users) { user in
+                        NavigationLink {
+                            ProfileView(user: user)
+                                .navigationBarBackButtonHidden()
+                        } label: {
                             HStack {
-                                Image(user.profileImageUrl!)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 40, height: 40)
-                                    .clipShape(Circle())
+                                CircularProfileImageView(user: user, size: 40)
                                 VStack (alignment: .leading) {
                                     Text(user.fullname)
                                         .fontWeight(.semibold)
@@ -29,8 +30,9 @@ struct DiscoverView: View {
                                 .font(.footnote)
                                 Spacer()
                             }
-                            .foregroundStyle(.black)
-                            .padding(.horizontal)
+                            .padding(.leading)
+                            
+                            
                         }
                     }
                 }
@@ -40,13 +42,16 @@ struct DiscoverView: View {
             .navigationDestination(for: User.self, destination: { user in
                 CurrentUserProfileView(user: user)
             })
-            .navigationTitle("Discover")
+            .navigationTitle("Search")
             .navigationBarTitleDisplayMode(.inline)
+        }
+        .refreshable {
+            Task { try await viewModel.fetchUsers() }
         }
         
     }
 }
 
 #Preview {
-    DiscoverView()
+    SearchView(currentUser: User.MOCK_USERS[0])
 }
