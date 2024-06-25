@@ -18,4 +18,8 @@ class SearchViewModel: ObservableObject {
     func fetchUsers() async throws {
         self.users = try await UserService.fetchAllUsers()
     }
+    
+    func search(term: String) async throws {
+        self.users =  try await UserService.searchUsers(name: term)
+    }
 }

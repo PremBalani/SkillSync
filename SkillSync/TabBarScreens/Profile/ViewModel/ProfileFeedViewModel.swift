@@ -14,6 +14,7 @@ class ProfileFeedViewModel: ObservableObject {
     @Published var workExperience = [ResumeItem]()
     @Published var clubsAndOrganizations = [ResumeItem]()
     @Published var projects = [Project]()
+    @Published var transcripts = [Transcript]()
     @Published var user: User
     @Published var portfolioIsEmpty = false
     private var items = ["Academic Achievements", "Community Service", "Athletic Achievements", "Work Experience", "Clubs & Organizations"]
@@ -38,10 +39,16 @@ class ProfileFeedViewModel: ObservableObject {
     }
     
     @MainActor
+    func fetchTranscript(withUid uid: String) async throws {
+        self.transcripts = try await PortfolioService.fetchUserTranscript(uid: uid)
+    }
+    
+    @MainActor
     func refreshProfileFeed(withUid uid: String) async throws {
         try await fetchProjects(withUid: uid)
         try await fetchResumeItems(withUid: uid)
+        try await fetchTranscript(withUid: uid)
         self.user = try await UserService.fetchUserData(withUid: uid)
-        portfolioIsEmpty = academicAchievements.isEmpty && communityService.isEmpty && athleticAchievements.isEmpty && workExperience.isEmpty && clubsAndOrganizations.isEmpty && projects.isEmpty
+        portfolioIsEmpty = academicAchievements.isEmpty && communityService.isEmpty && athleticAchievements.isEmpty && workExperience.isEmpty && clubsAndOrganizations.isEmpty && projects.isEmpty && transcripts.isEmpty
     }
 }

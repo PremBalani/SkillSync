@@ -17,6 +17,7 @@ class ContentViewModel: ObservableObject {
     
     @Published var userSession: FirebaseAuth.User?
     @Published var currentUser: User?
+    @Published var hasCompletedOnboarding: Bool?
     
     init() {
         setupSubscribers()
@@ -32,7 +33,10 @@ class ContentViewModel: ObservableObject {
             self?.currentUser = currentUser
         }
         .store(in: &cancellables)
+        
+        service.$hasCompletedOnboarding.sink { [weak self] hasCompletedOnboarding in
+            self?.hasCompletedOnboarding = hasCompletedOnboarding
+        }
+        .store(in: &cancellables)
     }
-    
-    
 }

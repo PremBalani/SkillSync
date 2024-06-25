@@ -80,7 +80,8 @@ struct EditPortfolioView: View {
                         }
                     }
                     NavigationLink {
-                        Text("not done yet")
+                        UploadTranscriptView(user: user)
+                            .navigationBarBackButtonHidden()
                     } label: {
                         Text("High School Transcript")
                             .portfolioButtonStyle()

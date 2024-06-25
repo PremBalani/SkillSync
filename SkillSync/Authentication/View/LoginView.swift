@@ -87,13 +87,13 @@ struct LoginView: View {
                     .background(.navyBlue)
                     .clipShape(RoundedRectangle(cornerSize: CGSize(width: 8, height: 8)))
             }
-            .padding(.vertical, 40)
+            .padding(.top, 40)
             .alert("Error", isPresented: $viewModel.hasError) {
                 Button("OK", role: .cancel) {}
             } message: {
                 Text(viewModel.errorMessage)
             }
-
+            
         
             VStack (spacing: 6) {
                 Text("Having Trouble Logging in?")

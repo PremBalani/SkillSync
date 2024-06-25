@@ -10,6 +10,7 @@ import SwiftUI
 struct AddProjectInformationView: View {
     @EnvironmentObject var viewModel: AddProjectViewModel
     @Environment(\.dismiss) var dismiss
+    var options = ["Public Feed", "Portfolio Only"]
 
     var body: some View {
         ScrollView {
@@ -72,7 +73,21 @@ struct AddProjectInformationView: View {
                         .foregroundStyle(.babyBlue)
                 )
                 .padding(.horizontal, 20)
+                .padding(.bottom, 20)
                 .lineLimit(30, reservesSpace: true)
+                
+                HStack {
+                    Text("Post Privacy")
+                        .font(.custom("Lato-Black", size: 15))
+                        .foregroundStyle(.babyBlue)
+                    Picker("Post Privacy", selection: $viewModel.onPublicFeed) {
+                        ForEach(options, id: \.self) {
+                            Text($0)
+                        }
+                    }.pickerStyle(.segmented)
+                }
+                .padding(.horizontal, 20)
+                .padding(.bottom)
                 
                 Spacer()
             }

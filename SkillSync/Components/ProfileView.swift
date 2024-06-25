@@ -7,12 +7,13 @@
 
 import SwiftUI
 import Kingfisher
+import PDFKit
 
 struct ProfileView: View {
     let user: User
     @StateObject var viewModel: ProfileFeedViewModel
-    @Environment(\.dismiss) var dismiss
-    
+    @Environment(\.dismiss) private var dismiss
+
     init(user: User) {
         self._viewModel = StateObject(wrappedValue: ProfileFeedViewModel(user: user))
         self.user = user
@@ -33,6 +34,36 @@ struct ProfileView: View {
                         Text("\(viewModel.user.grade)th Grader at \(viewModel.user.school)  ")
                             .font(.custom("Lato-Bold", size: 16))
                             .foregroundStyle(.companyOrange)
+                        HStack (spacing: 10) {
+                            if !viewModel.transcripts.isEmpty {
+                                NavigationLink {
+                                    PDFKitView(viewModel: viewModel)
+                                } label: {
+                                    HStack {
+                                        Image(systemName: "doc")
+                                            .imageScale(.small)
+                                        Text("School Transcript")
+                                            .font(.custom("Lato-Black", size: 12))
+                                    }
+                                    .foregroundStyle(.babyBlue)
+                                }
+                            }
+                            if !viewModel.transcripts.isEmpty && user.twitterUsername != nil {
+                                Divider()
+                            }
+                            if let twitterUsername = user.twitterUsername {
+                                Link(destination: URL(string: "https://twitter.com/\(twitterUsername)")!, label: {
+                                    HStack {
+                                        Image("x-icon")
+                                            .imageScale(.small)
+                                        Text("Twitter")
+                                            .font(.custom("Lato-Black", size: 12))
+
+                                    }
+                                    .foregroundStyle(.babyBlue)
+                                })
+                            }
+                        }
                     }
                     .padding(.trailing, 15)
                     
@@ -49,6 +80,7 @@ struct ProfileView: View {
                                                 .navigationBarBackButtonHidden()
                                         } label: {
                                             KFImage(URL(string:project.coverImageURL))
+                                                .resizable()
                                                 .scaledToFill()
                                                 .frame(width: 85, height: 85)
                                                 .clipShape(RoundedRectangle(cornerRadius: 20))
@@ -69,52 +101,42 @@ struct ProfileView: View {
                                 .font(.custom("Lato-Bold", size: 15))
                                 .foregroundStyle(.gray)
                         }
-                        
-                        if !viewModel.academicAchievements.isEmpty {
-                            VStack(alignment: .leading, spacing: 10) {
-                                ResumeSection(sectionName: "Academic Achievements", items: viewModel.academicAchievements)
+                        VStack(alignment: .leading) {
+                            if !viewModel.academicAchievements.isEmpty {
+                                VStack(alignment: .leading, spacing: 10) {
+                                    ResumeSection(sectionName: "Academic Achievements", items: viewModel.academicAchievements)
+                                }
+                            }
+                            if !viewModel.athleticAchievements.isEmpty {
+                                VStack(alignment: .leading, spacing: 10) {
+                                    ResumeSection(sectionName: "Athletic Achievements", items: viewModel.athleticAchievements)
+                                }
+                            }
+                            if !viewModel.clubsAndOrganizations.isEmpty {
+                                VStack(alignment: .leading, spacing: 10) {
+                                    ResumeSection(sectionName: "Clubs & Organizations", items: viewModel.clubsAndOrganizations)
+                                }
+                            }
+                            
+                            if !viewModel.communityService.isEmpty {
+                                VStack(alignment: .leading, spacing: 10) {
+                                    ResumeSection(sectionName: "Community Service", items: viewModel.communityService)
+                                }
+                            }
+                            
+                            if !viewModel.workExperience.isEmpty {
+                                VStack(alignment: .leading, spacing: 10) {
+                                    ResumeSection(sectionName: "Work Experience", items: viewModel.workExperience)
+                                }
                             }
                         }
-                        if !viewModel.athleticAchievements.isEmpty {
-                            VStack(alignment: .leading, spacing: 10) {
-                                ResumeSection(sectionName: "Athletic Achievements", items: viewModel.athleticAchievements)
-                            }
-                        }
-                        if !viewModel.clubsAndOrganizations.isEmpty {
-                            VStack(alignment: .leading, spacing: 10) {
-                                ResumeSection(sectionName: "Clubs & Organizations", items: viewModel.clubsAndOrganizations)
-                            }
-                        }
-                        
-                        if !viewModel.communityService.isEmpty {
-                            VStack(alignment: .leading, spacing: 10) {
-                                ResumeSection(sectionName: "Community Service", items: viewModel.communityService)
-                            }
-                        }
-                        
-                        if !viewModel.workExperience.isEmpty {
-                            VStack(alignment: .leading, spacing: 10) {
-                                ResumeSection(sectionName: "Work Experience", items: viewModel.workExperience)
-                            }
-                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
                         
                     }
                     .padding(.vertical, 30)
-                    
                 }
                 .padding(.top)
-                .padding(.leading)
-                .toolbar(.hidden, for: .tabBar)
-                .toolbar {
-                    ToolbarItem(placement: .topBarLeading) {
-                        Button {
-                            dismiss()
-                        } label: {
-                            Image(systemName: "chevron.left")
-                                .fontWeight(.bold)
-                        }
-                    }
-                }
+                .padding(.leading, 20)
                 
             }
         }
@@ -123,7 +145,6 @@ struct ProfileView: View {
         }
     }
 }
-
 
 
 #Preview {

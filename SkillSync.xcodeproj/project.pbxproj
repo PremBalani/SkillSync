@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5084B3D2BC45B3400445C0F /* UploadTranscriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5084B3C2BC45B3400445C0F /* UploadTranscriptView.swift */; };
+		E5084B3F2BC45CCB00445C0F /* UploadTranscriptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5084B3E2BC45CCB00445C0F /* UploadTranscriptViewModel.swift */; };
+		E5084B412BC8E66100445C0F /* Transcript.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5084B402BC8E66100445C0F /* Transcript.swift */; };
+		E5084B432BDC15CB00445C0F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5084B422BDC15CB00445C0F /* OnboardingView.swift */; };
+		E5084B452BE00AA100445C0F /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5084B442BE00AA100445C0F /* OnboardingItem.swift */; };
+		E5331A5D2BEE90520015BB74 /* TwitterWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5331A5C2BEE90520015BB74 /* TwitterWebView.swift */; };
 		E53884552B9919C9008F37F6 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53884542B9919C9008F37F6 /* EditProfileView.swift */; };
 		E53884592B99635A008F37F6 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53884582B99635A008F37F6 /* EditProfileViewModel.swift */; };
 		E538845C2B9AD01C008F37F6 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E538845B2B9AD01C008F37F6 /* ImageUploader.swift */; };
@@ -33,6 +39,8 @@
 		E5763B632BA12CA600253B20 /* ResumeItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B622BA12CA600253B20 /* ResumeItemViewModel.swift */; };
 		E5763B652BA13BD900253B20 /* ResumeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B642BA13BD900253B20 /* ResumeItem.swift */; };
 		E5763B6A2BA237CD00253B20 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B692BA237CD00253B20 /* SearchViewModel.swift */; };
+		E5763B6E2BA2BD3D00253B20 /* TwitterIntegrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B6D2BA2BD3D00253B20 /* TwitterIntegrationViewModel.swift */; };
+		E5763B702BA2BDB500253B20 /* TwitterIntegrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5763B6F2BA2BDB500253B20 /* TwitterIntegrationView.swift */; };
 		E5B491A82B43796900B60AC3 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5B491A72B43795A00B60AC3 /* Lato-Regular.ttf */; };
 		E5B491AB2B437AF300B60AC3 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5B491AA2B437AF200B60AC3 /* Lato-Black.ttf */; };
 		E5B491AD2B437B0600B60AC3 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5B491AC2B437B0600B60AC3 /* Lato-Bold.ttf */; };
@@ -50,6 +58,7 @@
 		E5F4543D2B2E30210080AE4D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4543C2B2E30210080AE4D /* NotificationView.swift */; };
 		E5F4543F2B2E30380080AE4D /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4543E2B2E30370080AE4D /* CurrentUserProfileView.swift */; };
 		E5F454412B2E30A60080AE4D /* HomeFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F454402B2E30A60080AE4D /* HomeFeedView.swift */; };
+		E5F664AD2C279A1E00AB123A /* EmptyHomeFeedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F664AC2C279A1E00AB123A /* EmptyHomeFeedCellView.swift */; };
 		E5FBE6C62B45D9FE00E27224 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FBE6C52B45D9FE00E27224 /* LandingView.swift */; };
 		E5FBE6D52B45DE9600E27224 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E5FBE6D42B45DE9600E27224 /* FirebaseAuth */; };
 		E5FBE6E12B45DE9600E27224 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E5FBE6E02B45DE9600E27224 /* FirebaseFirestore */; };
@@ -58,6 +67,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E5084B3C2BC45B3400445C0F /* UploadTranscriptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTranscriptView.swift; sourceTree = "<group>"; };
+		E5084B3E2BC45CCB00445C0F /* UploadTranscriptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTranscriptViewModel.swift; sourceTree = "<group>"; };
+		E5084B402BC8E66100445C0F /* Transcript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcript.swift; sourceTree = "<group>"; };
+		E5084B422BDC15CB00445C0F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		E5084B442BE00AA100445C0F /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
+		E5331A5C2BEE90520015BB74 /* TwitterWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterWebView.swift; sourceTree = "<group>"; };
 		E53884542B9919C9008F37F6 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		E53884582B99635A008F37F6 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		E538845B2B9AD01C008F37F6 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
@@ -84,6 +99,8 @@
 		E5763B622BA12CA600253B20 /* ResumeItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeItemViewModel.swift; sourceTree = "<group>"; };
 		E5763B642BA13BD900253B20 /* ResumeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeItem.swift; sourceTree = "<group>"; };
 		E5763B692BA237CD00253B20 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		E5763B6D2BA2BD3D00253B20 /* TwitterIntegrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterIntegrationViewModel.swift; sourceTree = "<group>"; };
+		E5763B6F2BA2BDB500253B20 /* TwitterIntegrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterIntegrationView.swift; sourceTree = "<group>"; };
 		E5B491A72B43795A00B60AC3 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		E5B491A92B4379BA00B60AC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E5B491AA2B437AF200B60AC3 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
@@ -103,6 +120,7 @@
 		E5F4543C2B2E30210080AE4D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		E5F4543E2B2E30370080AE4D /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		E5F454402B2E30A60080AE4D /* HomeFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedView.swift; sourceTree = "<group>"; };
+		E5F664AC2C279A1E00AB123A /* EmptyHomeFeedCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyHomeFeedCellView.swift; sourceTree = "<group>"; };
 		E5FBE6C52B45D9FE00E27224 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +140,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5084B462BE00AA600445C0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5084B442BE00AA100445C0F /* OnboardingItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5084B472BE1A1BF00445C0F /* TwitterIntegration */ = {
+			isa = PBXGroup;
+			children = (
+				E5084B492BE1A1D500445C0F /* ViewModel */,
+				E5084B482BE1A1CA00445C0F /* View */,
+			);
+			path = TwitterIntegration;
+			sourceTree = "<group>";
+		};
+		E5084B482BE1A1CA00445C0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5763B6F2BA2BDB500253B20 /* TwitterIntegrationView.swift */,
+				E5331A5C2BEE90520015BB74 /* TwitterWebView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E5084B492BE1A1D500445C0F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E5763B6D2BA2BD3D00253B20 /* TwitterIntegrationViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
 		E53884532B9919AF008F37F6 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +239,7 @@
 				E5F4543A2B2E30080080AE4D /* EditPortfolioView.swift */,
 				E53884682B9CC7E4008F37F6 /* AddProjectImageView.swift */,
 				E565F1422B9CEAA2008422B1 /* AddProjectInformationView.swift */,
+				E5084B3C2BC45B3400445C0F /* UploadTranscriptView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +252,7 @@
 				E5763B4A2B9D5E3B00253B20 /* HomeFeed */,
 				E5763B682BA2373400253B20 /* Discover */,
 				E5F4543C2B2E30210080AE4D /* NotificationView.swift */,
+				E5084B472BE1A1BF00445C0F /* TwitterIntegration */,
 			);
 			path = TabBarScreens;
 			sourceTree = "<group>";
@@ -208,6 +262,7 @@
 			children = (
 				E538846B2B9CCD94008F37F6 /* AddProjectViewModel.swift */,
 				E5763B622BA12CA600253B20 /* ResumeItemViewModel.swift */,
+				E5084B3E2BC45CCB00445C0F /* UploadTranscriptViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -218,6 +273,7 @@
 				E56E90532B471CD700CB3894 /* View */,
 				E56E905E2B47242C00CB3894 /* ViewModel */,
 				E56E90562B471E1A00CB3894 /* Service */,
+				E5084B462BE00AA600445C0F /* Model */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -228,6 +284,7 @@
 				E5FBE6C52B45D9FE00E27224 /* LandingView.swift */,
 				E553D2952B3BCC9B007DD8A3 /* RegistrationView.swift */,
 				E56E90542B471DCA00CB3894 /* LoginView.swift */,
+				E5084B422BDC15CB00445C0F /* OnboardingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -288,6 +345,7 @@
 			children = (
 				E5F454402B2E30A60080AE4D /* HomeFeedView.swift */,
 				E5763B4B2B9D5E4D00253B20 /* HomeFeedCellView.swift */,
+				E5F664AC2C279A1E00AB123A /* EmptyHomeFeedCellView.swift */,
 				E5763B572B9E975C00253B20 /* ProjectDetailedView.swift */,
 			);
 			path = View;
@@ -327,6 +385,7 @@
 				E5EB27B02B3F6ED6003001DE /* User.swift */,
 				E5E994C72B48F3C100E85CCD /* Project.swift */,
 				E5763B642BA13BD900253B20 /* ResumeItem.swift */,
+				E5084B402BC8E66100445C0F /* Transcript.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -461,8 +520,10 @@
 			files = (
 				E5763B602BA1278000253B20 /* ResumeItemView.swift in Sources */,
 				E53884552B9919C9008F37F6 /* EditProfileView.swift in Sources */,
+				E5763B702BA2BDB500253B20 /* TwitterIntegrationView.swift in Sources */,
 				E53884592B99635A008F37F6 /* EditProfileViewModel.swift in Sources */,
 				E5763B582B9E975C00253B20 /* ProjectDetailedView.swift in Sources */,
+				E5084B412BC8E66100445C0F /* Transcript.swift in Sources */,
 				E5763B522B9E649400253B20 /* UserService.swift in Sources */,
 				E5FBE6C62B45D9FE00E27224 /* LandingView.swift in Sources */,
 				E5763B6A2BA237CD00253B20 /* SearchViewModel.swift in Sources */,
@@ -474,17 +535,24 @@
 				E5763B5A2B9F461300253B20 /* ProfileView.swift in Sources */,
 				E53884622B9AD92D008F37F6 /* CircularProfileImageView.swift in Sources */,
 				E56E90582B471E2F00CB3894 /* Authentication.swift in Sources */,
+				E5084B452BE00AA100445C0F /* OnboardingItem.swift in Sources */,
 				E5F454392B2E2FB20080AE4D /* SearchView.swift in Sources */,
 				E5F4543B2B2E30080080AE4D /* EditPortfolioView.swift in Sources */,
 				E565F1432B9CEAA2008422B1 /* AddProjectInformationView.swift in Sources */,
 				E56E90552B471DCA00CB3894 /* LoginView.swift in Sources */,
 				E5763B5E2BA124C500253B20 /* CustomInputFieldView.swift in Sources */,
+				E5763B6E2BA2BD3D00253B20 /* TwitterIntegrationViewModel.swift in Sources */,
 				E5F454412B2E30A60080AE4D /* HomeFeedView.swift in Sources */,
+				E5084B432BDC15CB00445C0F /* OnboardingView.swift in Sources */,
+				E5331A5D2BEE90520015BB74 /* TwitterWebView.swift in Sources */,
+				E5084B3D2BC45B3400445C0F /* UploadTranscriptView.swift in Sources */,
 				E5F454272B2E19E40080AE4D /* SkillSyncApp.swift in Sources */,
+				E5F664AD2C279A1E00AB123A /* EmptyHomeFeedCellView.swift in Sources */,
 				E5763B4C2B9D5E4D00253B20 /* HomeFeedCellView.swift in Sources */,
 				E53884692B9CC7E4008F37F6 /* AddProjectImageView.swift in Sources */,
 				E56E90602B47246300CB3894 /* RegistrationViewModel.swift in Sources */,
 				E538846C2B9CCD94008F37F6 /* AddProjectViewModel.swift in Sources */,
+				E5084B3F2BC45CCB00445C0F /* UploadTranscriptViewModel.swift in Sources */,
 				E5763B502B9E5EAF00253B20 /* HomeFeedViewModel.swift in Sources */,
 				E56E905D2B47208800CB3894 /* ContentViewModel.swift in Sources */,
 				E5F454352B2E2DD10080AE4D /* MainTabView.swift in Sources */,
@@ -636,8 +704,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -666,8 +735,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

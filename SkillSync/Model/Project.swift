@@ -21,7 +21,7 @@ struct Project: Identifiable, Hashable, Codable {
 
 extension Project {
     static var MOCK_PROJECTS: [Project] = [
-        .init(id: NSUUID().uuidString, coverImageURL: "https://firebasestorage.googleapis.com:443/v0/b/skillsync-c9122.appspot.com/o/profile_images%2FE2D4276B-521E-453D-86C0-4071BF966680?alt=media&token=81feb546-34bf-43b7-a7e2-9b015012763b", title: "Flappy Bird in Java", description: "Hey mates", ownerUid: NSUUID().uuidString, header: "This is my project"),
-        .init(id: NSUUID().uuidString, coverImageURL: "AppImage", title: "FBLA APP", description: "Come on", ownerUid: NSUUID().uuidString, header: "This is my project")
+        .init(id: NSUUID().uuidString, coverImageURL: "https://firebasestorage.googleapis.com:443/v0/b/skillsync-c9122.appspot.com/o/profile_images%2FE2D4276B-521E-453D-86C0-4071BF966680?alt=media&token=81feb546-34bf-43b7-a7e2-9b015012763b", title: "Flappy Bird in Java", description: "Hey mates", ownerUid: NSUUID().uuidString, header: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
+        .init(id: NSUUID().uuidString, coverImageURL: "AppImage", title: "FBLA APP", description: "Come on", ownerUid: NSUUID().uuidString, header: "This is my project tha")
     ]
 }

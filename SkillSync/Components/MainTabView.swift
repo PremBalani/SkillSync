@@ -38,9 +38,9 @@ struct MainTabView: View {
             TabView(selection: $selectedTab) {
                 HomeFeedView()
                     .tag(0)
-                SearchView(currentUser: user)
+                SearchView()
                     .tag(1)
-                NotificationView()
+                TwitterIntegrationView(user: user)
                     .tag(3)
                 CurrentUserProfileView(user: user)
                     .tag(4)

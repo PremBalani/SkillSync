@@ -13,13 +13,17 @@ struct ContentView: View {
     var body: some View {
         Group {
             if viewModel.userSession == nil {
-                LandingView()
+                if viewModel.hasCompletedOnboarding! {
+                    LandingView()
+                } else {
+                    OnboardingView()
+                }
             } else if let currentUser = viewModel.currentUser {
-                MainTabView(user: currentUser) 
+                MainTabView(user: currentUser)
             } else {
                 MainTabView(user: User.MOCK_USERS[0])
             }
-                
+            
         }
     }
 }

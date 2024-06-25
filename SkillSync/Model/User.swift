@@ -14,6 +14,7 @@ struct User: Identifiable, Hashable, Codable {
     var school: String
     let email: String
     var grade: String
+    var twitterUsername: String?
 }
 
 extension User {

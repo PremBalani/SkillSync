@@ -36,9 +36,15 @@ struct AddProjectImageView: View {
                         .resizable()
                         .scaledToFill()
                 } else {
-                    Image("UploadCloudImage")
-                        .resizable()
-                        .scaledToFill()
+                    ZStack {
+                        Rectangle()
+                            .fill(.navyBlue)
+                        Image(systemName: "icloud.and.arrow.up")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 100)
+                            .foregroundStyle(.white)
+                    }
                 }
             }
             .frame(width: 300, height: 300)

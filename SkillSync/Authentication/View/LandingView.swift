@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LandingView: View {
+    
     var body: some View {
         NavigationStack {
             VStack {

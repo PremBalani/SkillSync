@@ -12,7 +12,7 @@ struct HomeFeedView: View {
     var body: some View {
         NavigationStack {
             ScrollView() {
-                VStack (alignment: .leading){
+                HStack {
                     VStack(alignment: .leading, spacing: 10) {
                         Text("Discover")
                             .font(.custom("Lato-Black", size: 30))
@@ -21,14 +21,22 @@ struct HomeFeedView: View {
                             .font(.custom("Lato-Regular", size: 15))
                             .foregroundStyle(.companyOrange)
                     }
-                    .padding(.leading, 40)
+                    .padding(.leading, 60)
                     .padding(.top, 80)
-                    
-                    
-                    ForEach(viewModel.projects, id: \.self) { project in
-                        HomeFeedCellView(project: project, user: project.user ?? User.MOCK_USERS[0])
-                    }
+                    Spacer()
                 }
+
+                    if !viewModel.projects.isEmpty{
+                        ForEach(viewModel.projects, id: \.self) { project in
+                            HomeFeedCellView(project: project, user: project.user ?? User.MOCK_USERS[0])
+                        }
+                    } else {
+                        EmptyHomeFeedCellView()
+                        EmptyHomeFeedCellView()
+                        EmptyHomeFeedCellView()
+                    }
+                    
+                
             }
             .scrollIndicators(.hidden)
             .refreshable {

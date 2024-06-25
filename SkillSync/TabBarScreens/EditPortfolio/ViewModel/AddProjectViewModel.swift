@@ -11,7 +11,6 @@ import Firebase
 
 @MainActor
 class AddProjectViewModel: ObservableObject {
-    
     @Published var user: User
     @Published var selectedImage: PhotosPickerItem? {
         didSet { Task { await loadImage(fromItem: selectedImage) } }
@@ -21,6 +20,7 @@ class AddProjectViewModel: ObservableObject {
     @Published var headerPlaceholder: String
     @Published var title: String = ""
     @Published var description: String = ""
+    @Published var onPublicFeed: String = "Public Feed"
     private var uiImage: UIImage?
     
     init(user: User) {
@@ -47,7 +47,6 @@ class AddProjectViewModel: ObservableObject {
         guard let encodedProject = try? Firestore.Encoder().encode(project) else { return }
         
         try await postRef.setData(encodedProject)
-        
     }
 }
 

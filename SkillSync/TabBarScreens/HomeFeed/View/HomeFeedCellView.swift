@@ -22,9 +22,6 @@ struct HomeFeedCellView: View {
                             .resizable()
                             .scaledToFill()
                             .frame(width: 300, height: 300)
-                            
-                            
-                        
                         VStack (alignment: .leading, spacing: 10) {
                             Text(project.title)
                                 .font(.custom("Lato-Black", size: 24))
@@ -34,7 +31,7 @@ struct HomeFeedCellView: View {
                                 .lineLimit(2, reservesSpace: true)
                         }
                         .foregroundStyle(.white)
-                        .padding(.leading, 20)
+                        .padding(.horizontal, 20)
                         .padding(.vertical, 30)
                         .background(LinearGradient(colors: [.black, .black.opacity(0.3)], startPoint: .bottom, endPoint: .top).frame(width: 1000))
                         .multilineTextAlignment(.leading)
@@ -43,18 +40,15 @@ struct HomeFeedCellView: View {
                 
                 NavigationLink {
                     ProfileView(user: user)
-                        .navigationBarBackButtonHidden()
                 } label: {
                     CircularProfileImageView(user: user, size: 50)
                         .padding()
                 }
             }
             .clipShape(RoundedRectangle(cornerSize: CGSize(width: 40, height: 40)))
-            .padding(.horizontal, 40)
+            .padding(.horizontal, 50)
             .padding(.vertical, 15)
-        
     }
-    
 }
 
 #Preview {

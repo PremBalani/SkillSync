@@ -50,7 +50,14 @@ class PortfolioService {
         var items = try snapshot.documents.compactMap { document in
             return try document.data(as: ResumeItem.self)
         }
-        
         return items
+    }
+    
+    static func fetchUserTranscript(uid: String) async throws -> [Transcript] {
+        let snapshot = try await Firestore.firestore().collection("transcripts").whereField("ownerUid", isEqualTo: uid).getDocuments()
+        var item = try snapshot.documents.compactMap { document in
+            return try document.data(as: Transcript.self)
+        }
+        return item
     }
 }
