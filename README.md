@@ -5,6 +5,10 @@ By Krish Balani (App Designer) and Prem Balani (Full Stack Developer), Rising Se
 ### FBLA 2023 - 2024 Prompt
 > Create a mobile application that enables students to create a portfolio of their high school experiences. This app should allow students to showcase their academic achievements, athletic participation, performing arts experience, clubs and organization memberships, community service hours, honors classes, and other related items.
 
+### About Our App
+
+SkillSync is a mobile application designed for iOS devices. To log in, users must fill out a form with their email address, full name, password, school, and grade level. The email address and password provided in the sign-up form will be used to log into the app from that point onwards. Once in the app, students can explore a discover page, where they can take inspiration from other high schoolers’ projects or even reach out via X (formerly Twitter) to get involved with their project. To upload items to a user’s portfolio, they must navigate to the “SkillSync” icon at the bottom of their screen. They will be able to upload things like projects, academic achievements, community service, etc. After clicking on the item they want to upload, the app will lead them through a step-by-step process and the item will appear on their profile upon completion. Projects that they upload will also be uploaded to the feed, where other students will be able to read or inquire about their projects. The search feature at the bottom of the screen allows users to search for other user’s portfolios. 
+
 ### Our Presentation
 
 ![SkillSync - Your Digital Showcase](https://github.com/user-attachments/assets/b0535e57-7c59-4b27-87d7-b00c5e020e9c)
@@ -38,12 +42,6 @@ https://github.com/user-attachments/assets/b728302e-01ea-417b-97e3-279fe8f2169a
 https://github.com/user-attachments/assets/f51e84a7-f4a5-4b25-b84a-dd04b07cbb52
 
 ![SkillSync - Your Digital Showcase (12)](https://github.com/user-attachments/assets/f74719ba-e5b9-47a6-87ef-63c3e636af11)
-
-
-
-### App Instructions
-
-SkillSync is a mobile application designed for iOS devices. To log in, users must fill out a form with their email address, full name, password, school, and grade level. The email address and password provided in the sign-up form will be used to log into the app from that point onwards. Once in the app, students can explore a discover page, where they can take inspiration from other high schoolers’ projects or even reach out via X (formerly Twitter) to get involved with their project. To upload items to a user’s portfolio, they must navigate to the “SkillSync” icon at the bottom of their screen. They will be able to upload things like projects, academic achievements, community service, etc. After clicking on the item they want to upload, the app will lead them through a step-by-step process and the item will appear on their profile upon completion. Projects that they upload will also be uploaded to the feed, where other students will be able to read or inquire about their projects. The search feature at the bottom of the screen allows users to search for other user’s portfolios. 
  
 ### Software Requirements
 Operating System
